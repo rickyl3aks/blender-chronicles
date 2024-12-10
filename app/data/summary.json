@@ -1,6 +1,11 @@
 {
-  "summary": {
-    "title": "Sci-fi Crate",
-    "description": " This design was inspired by CG Cookie   course where I learned about 3D design and working with meshes. I applied principles of visual composition, using vibrant colors and gradients to create a futuristic sci-fi feel"
-  }
+  "summaries": [
+    {
+      "title": "Sci-fi Crate",
+      "description": "This design was inspired by CG Cookie course where I learned about 3D design and working with meshes. I applied principles of visual composition, using vibrant colors and gradients to create a futuristic sci-fi feel.",
+      "render": "sci-fi-crate",
+      "width": 900,
+      "height": 200
+    }
+  ]
 }

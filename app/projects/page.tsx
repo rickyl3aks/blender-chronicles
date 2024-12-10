@@ -1,6 +1,5 @@
 import { Button } from "../components/button";
-import Description from "../components/description";
-import ImagePopup from "../image-popup";
+import MediaCard from "../components/mediaCard";
 
 const Projects = () => {
   return (
@@ -9,11 +8,7 @@ const Projects = () => {
 
       <div className="flex flex-col items-center justify-start min-h-screen space-y-10 px-6">
         <div>
-          <Description />
-        </div>
-
-        <div className="flex justify-center items-start">
-          <ImagePopup render="sci-fi-crate" width={900} height={200} />
+          <MediaCard />
         </div>
 
         <div className="text-center animate-bounceSlow">
