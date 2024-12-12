@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ImagePopup from "../image-popup";
 import { CarouselProps } from "../types/types";
+import Description from "./description";
 
 const Carousel = ({ summaries }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,7 +20,7 @@ const Carousel = ({ summaries }: CarouselProps) => {
       <div className="relative">
         <div className="flex items-center justify-center space-x-4">
           <div>
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-center sm:text-left text-gradient bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500 mb-6">
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-left sm:text-left text-gradient bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500 mb-6">
               {summaries[currentIndex].title}
             </h1>
 
@@ -50,36 +51,9 @@ const Carousel = ({ summaries }: CarouselProps) => {
             </div>
           </div>
         </div>
-
-        <p className="mt-8 text-left sm:text-center text-lg sm:text-xl text-gray-600 font-medium mb-4">
-          {["CG Cookie", "Nier: Automata"].some((keyword) => summaries[currentIndex].description.includes(keyword))
-            ? summaries[currentIndex].description.split(/(CG Cookie|Nier: Automata)/).map((part, index) =>
-                part === "CG Cookie" ? (
-                  <a
-                    key={index}
-                    href="https://cgcookie.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 underline transition-all duration-300 hover:text-purple-500 hover:underline-offset-4"
-                  >
-                    {part}
-                  </a>
-                ) : part === "Nier: Automata" ? (
-                  <a
-                    key={index}
-                    href="https://www.square-enix-games.com/en_EU/games/nier-automata"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-green-500 underline transition-all duration-300 hover:text-purple-500 hover:underline-offset-4"
-                  >
-                    {part}
-                  </a>
-                ) : (
-                  part
-                )
-              )
-            : summaries[currentIndex].description}
-        </p>
+        <div className="w-full max-w-3xl">
+          <Description summaries={summaries} currentIndex={currentIndex} />
+        </div>
       </div>
     </>
   );

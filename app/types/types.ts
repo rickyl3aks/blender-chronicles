@@ -14,3 +14,12 @@ export interface Summaries {
 export interface CarouselProps {
   summaries: Summaries[];
 }
+
+export interface Summary {
+  description: string;
+}
+
+export interface DescriptionProps {
+  summaries: Summary[];
+  currentIndex: number;
+}
