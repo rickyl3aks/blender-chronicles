@@ -2,10 +2,27 @@
   "summaries": [
     {
       "title": "Sci-fi Crate",
-      "description": "This design was inspired by CG Cookie course where I learned about 3D design and working with meshes. I applied principles of visual composition, using vibrant colors and gradients to create a futuristic sci-fi feel.",
+      "description": "This design was inspired by CG Cookie course where I learned about 3D design and working with meshes. I applied principles of visual composition, using vibrant colors and gradients to create a futuristic sci-fi feel",
       "render": "sci-fi-crate",
-      "width": 900,
-      "height": 200
+      "date": 1726012800
+    },
+    {
+      "title": "Coffee Cup",
+      "description": "Another CG Cookie exercise, this time a coffee cup. This task helped me understand how shadows enhance realism in objects",
+      "render": "coffee-cup",
+      "date": 1725926400
+    },
+    {
+      "title": "Tea Pot",
+      "description": "This teapot marks my first try at using geometry, which has significantly helped me enhance my skills by teaching me how shapes, proportions, and details come together to create a cohesive and realistic 3D model. It was a valuable learning experience that laid the foundation for future projects",
+      "render": "tea-pot",
+      "date": 1724889600
+    },
+    {
+      "title": "Emil",
+      "description": "This is Emil, my first attempt at sculpting. It’s inspired by one of my favourite games, Nier: Automata. While it’s not an exact replica, I hope to create more pieces like this in the future",
+      "render": "emil",
+      "date": 1717977600
     }
   ]
 }

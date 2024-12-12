@@ -51,7 +51,7 @@ const ImagePopup = ({ render, width, height }: ImagePop) => {
             >
               &times;
             </button>
-
+            {/* <ThreeJSModal /> */}
             <Image
               src={`/images/render/${render}.png`}
               alt={`Full-size ${render}`}

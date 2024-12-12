@@ -8,6 +8,9 @@ export interface Summaries {
   title: string;
   description: string;
   render: string;
-  width: number;
-  height: number;
+  date: number;
+}
+
+export interface CarouselProps {
+  summaries: Summaries[];
 }
