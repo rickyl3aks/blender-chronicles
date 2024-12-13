@@ -17,6 +17,7 @@ export interface CarouselProps {
 
 export interface Summary {
   description: string;
+  link?: string;
 }
 
 export interface DescriptionProps {

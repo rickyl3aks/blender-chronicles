@@ -2,15 +2,17 @@
   "summaries": [
     {
       "title": "Sci-fi Crate",
-      "description": "This design was inspired by CG Cookie course where I learned about 3D design and working with meshes. I applied principles of visual composition, using vibrant colors and gradients to create a futuristic sci-fi feel",
+      "description": "This design was inspired by /CG Cookie/ course where I learned about 3D design and working with meshes. I applied principles of visual composition, using vibrant colors and gradients to create a futuristic sci-fi feel",
       "render": "sci-fi-crate",
-      "date": 1726012800
+      "date": 1726012800,
+      "link": "https://cgcookie.com"
     },
     {
       "title": "Coffee Cup",
-      "description": "Another CG Cookie exercise, this time a coffee cup. This task helped me understand how shadows enhance realism in objects",
+      "description": "Another /CG Cookie/ exercise, this time a coffee cup. This task helped me understand how shadows enhance realism in objects",
       "render": "coffee-cup",
-      "date": 1725926400
+      "date": 1725926400,
+      "link": "https://cgcookie.com"
     },
     {
       "title": "Tea Pot",
@@ -20,9 +22,10 @@
     },
     {
       "title": "Emil",
-      "description": "This is Emil, my first attempt at sculpting. It’s inspired by one of my favourite games, Nier: Automata. While it’s not an exact replica, I hope to create more pieces like this in the future",
+      "description": "This is Emil, my first attempt at sculpting. It’s inspired by one of my favourite games, /Nier: Automata/. While it’s not an exact replica, I hope to create more pieces like this in the future",
       "render": "emil",
-      "date": 1717977600
+      "date": 1717977600,
+      "link": "https://www.square-enix-games.com/en_EU/games/nier-automata"
     }
   ]
 }
