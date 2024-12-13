@@ -41,7 +41,7 @@ const ThreeJSModal = () => {
 
     // Load GLTF model
     const loader = new GLTFLoader();
-    loader.load(`/images/render/coffe-cup3.glb`, (gltf) => {
+    loader.load(`/images/render/sci-fiTHREE.glb`, (gltf) => {
       const model = gltf.scene;
       model.scale.set(2, 2, 2);
       scene.add(model);
