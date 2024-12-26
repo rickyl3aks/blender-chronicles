@@ -26,6 +26,13 @@
       "render": "emil",
       "date": 1717977600,
       "link": "https://www.square-enix-games.com/en_EU/games/nier-automata"
+    },
+    {
+      "title": "Pokeball",
+      "description": "This Pokeball was created using techniques I learned from a /CG Cookie/ course. I explored texturing by applying various images to the object and gained a deeper understanding of shading nodes to fine-tune colors and achieve a stretched, aged appearance for the Pokeball",
+      "render": "pokeball",
+      "date": 1735207562,
+      "link": "https://cgcookie.com"
     }
   ]
 }
