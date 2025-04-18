@@ -33,6 +33,12 @@
       "render": "pokeball",
       "date": 1735207562,
       "link": "https://cgcookie.com"
+    },
+    {
+      "title": "Lightbulb",
+      "description": "I created a scene featuring light bulbs, using the array modifier for duplication. I added a glowing light effect to the bulbs and designed a pavement-like background using different nodes",
+      "render": "lightBulb",
+      "date": 1744967869
     }
   ]
 }
