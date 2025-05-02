@@ -1,14 +1,17 @@
 import { Button } from "../components/button";
 import MediaCard from "../components/mediaCard";
+import { Summaries } from "../types/types";
 
-const Projects = () => {
+const Projects = async () => {
+  const { summaries }: { summaries: Summaries[] } = await import("../data/summary.json");
+
   return (
     <div className="m-4 space-y-12">
       <Button />
 
       <div className="flex flex-col items-center justify-start min-h-screen space-y-10 px-6">
         <div>
-          <MediaCard />
+          <MediaCard render={summaries} />
         </div>
 
         <div className="text-center animate-bounceSlow">

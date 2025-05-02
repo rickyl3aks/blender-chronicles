@@ -15,6 +15,7 @@ const Carousel = ({ summaries }: CarouselProps) => {
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + summaries.length) % summaries.length);
   };
+
   return (
     <>
       <div className="relative">
@@ -25,29 +26,39 @@ const Carousel = ({ summaries }: CarouselProps) => {
             </h1>
 
             <div className="relative">
-              <ImagePopup render={summaries[currentIndex].render} width={900} height={200} />
+              {summaries[currentIndex]?.video ? (
+                <video width="640" height="360" autoPlay muted loop controls>
+                  <source src={`/images/render/${summaries[currentIndex].render}.mp4`} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <ImagePopup render={summaries[currentIndex].render} width={900} height={200} />
+              )}
 
-              <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-4">
-                <button
-                  onClick={prevSlide}
-                  className="text-white bg-black bg-opacity-50 rounded-full w-8 h-8 sm:w-12 sm:h-12 hover:bg-opacity-75 transition duration-300"
-                >
-                  &lt;
-                </button>
-              </div>
-
-              <div className="absolute top-1/2 right-0 transform -translate-y-1/2 px-4">
-                <button
-                  onClick={nextSlide}
-                  className="text-white bg-black bg-opacity-50 rounded-full w-8 h-8 sm:w-12 sm:h-12 hover:bg-opacity-75 transition duration-300"
-                >
-                  &gt;
-                </button>
-              </div>
-
-              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold text-xs sm:text-sm py-0.5 px-2 sm:py-1 sm:px-3 rounded-full shadow-md opacity-80">
-                {currentIndex + 1}/{summaries.length}
-              </div>
+              {summaries.length > 1 && (
+                <>
+                  {" "}
+                  <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-4">
+                    <button
+                      onClick={prevSlide}
+                      className="cursor-pointer text-white bg-black bg-opacity-50 rounded-full w-8 h-8 sm:w-12 sm:h-12 hover:bg-opacity-75 transition duration-300"
+                    >
+                      &lt;
+                    </button>
+                  </div>
+                  <div className="absolute top-1/2 right-0 transform -translate-y-1/2 px-4">
+                    <button
+                      onClick={nextSlide}
+                      className="cursor-pointer text-white bg-black bg-opacity-50 rounded-full w-8 h-8 sm:w-12 sm:h-12 hover:bg-opacity-75 transition duration-300"
+                    >
+                      &gt;
+                    </button>
+                  </div>
+                  <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold text-xs sm:text-sm py-0.5 px-2 sm:py-1 sm:px-3 rounded-full shadow-md opacity-80">
+                    {currentIndex + 1}/{summaries.length}
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>

@@ -9,6 +9,7 @@ export interface Summaries {
   description: string;
   render: string;
   date: number;
+  video?: boolean;
 }
 
 export interface CarouselProps {
@@ -23,4 +24,8 @@ export interface Summary {
 export interface DescriptionProps {
   summaries: Summary[];
   currentIndex: number;
+}
+
+export interface MediaCardProps {
+  render: Summaries[];
 }

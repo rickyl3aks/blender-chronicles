@@ -1,0 +1,12 @@
+{
+  "summaries": [
+    {
+      "title": "Domino",
+      "description": "A motion graphic focused on domino physics, created as part of a /CG Cookie/ course. I used Blender’s rigid body system and added textures to enrich the visual feel",
+      "render": "domino",
+      "date": 1714644853,
+      "video": true,
+      "link": "https://cgcookie.com"
+    }
+  ]
+}

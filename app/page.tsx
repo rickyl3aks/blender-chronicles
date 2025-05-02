@@ -13,22 +13,31 @@ const Home = () => {
         </p>
         <ol className="list-inside text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 before:content-['-'] before:mr-2">
-            Start exploring by navigating to the
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">Projects</code> section
+            Start exploring by visiting the
+            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">Motion Graphic</code> and
+            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold ml-1">3D Render</code> sections
           </li>
+
           <li className="before:content-['-'] before:mr-2">Check out my latest renders and experiments.</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] hover:text-black text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            href="/motionGraphics"
+            rel="noopener noreferrer"
+          >
+            MOTION GRAPHIC
+          </a>
+          <a
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] hover:text-black text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="/projects"
             rel="noopener noreferrer"
           >
-            Browse Projects
+            3D RENDER
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] hover:text-black text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="https://github.com/rickyl3aks"
           >
             View my GitHub
