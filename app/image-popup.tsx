@@ -36,7 +36,7 @@ const ImagePopup = ({ render, width, height }: ImagePop) => {
         width={width}
         height={height}
         priority
-        className="cursor-pointer border-4 border-white rounded-lg hover:border-gray-300"
+        className="cursor-pointer border-4  rounded-[0.75rem] hover:border-gray-300"
         onContextMenu={(e) => e.preventDefault()}
         onClick={openModal}
       />
@@ -57,7 +57,7 @@ const ImagePopup = ({ render, width, height }: ImagePop) => {
               alt={`Full-size ${render}`}
               width={1400}
               height={300}
-              className="rounded-lg max-w-full h-auto"
+              className="rounded-[0.75rem] max-w-full h-auto"
               onContextMenu={(e) => e.preventDefault()}
             />
           </div>
