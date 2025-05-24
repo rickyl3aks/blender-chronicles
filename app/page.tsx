@@ -38,11 +38,18 @@ const Home = () => {
           </a>
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] hover:text-black text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://github.com/rickyl3aks"
+            href="/lowPoly"
+            rel="noopener noreferrer"
           >
-            View my GitHub
+            LOW POLY
           </a>
         </div>
+        <a
+          className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] hover:text-black text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+          href="https://github.com/rickyl3aks"
+        >
+          View my GitHub
+        </a>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a className="flex items-center gap-2 hover:underline hover:underline-offset-4" href="/about">

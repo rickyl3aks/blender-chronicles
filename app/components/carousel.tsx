@@ -5,7 +5,7 @@ import ImagePopup from "../image-popup";
 import { CarouselProps } from "../types/types";
 import Description from "./description";
 
-const Carousel = ({ summaries }: CarouselProps) => {
+const Carousel = ({ summaries, type }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -32,7 +32,7 @@ const Carousel = ({ summaries }: CarouselProps) => {
                   Your browser does not support the video tag.
                 </video>
               ) : (
-                <ImagePopup render={summaries[currentIndex].render} width={900} height={200} />
+                <ImagePopup render={summaries[currentIndex].render} type={type} width={900} height={200} />
               )}
 
               {summaries.length > 1 && (

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ImagePop } from "./types/types";
 
-const ImagePopup = ({ render, width, height }: ImagePop) => {
+const ImagePopup = ({ render, width, height, type }: ImagePop) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -30,7 +30,7 @@ const ImagePopup = ({ render, width, height }: ImagePop) => {
   return (
     <div className="flex justify-center items-center">
       <Image
-        src={`/images/render/${render}.png`}
+        src={`/images/render/${type ? `${type}/` : ""}${render}.png`}
         alt={render}
         title={render}
         width={width}
@@ -53,7 +53,7 @@ const ImagePopup = ({ render, width, height }: ImagePop) => {
             </button>
             {/* <ThreeJSModal /> */}
             <Image
-              src={`/images/render/${render}.png`}
+              src={`/images/render/${type ? `${type}/` : ""}${render}.png`}
               alt={`Full-size ${render}`}
               width={1400}
               height={300}

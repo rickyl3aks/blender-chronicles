@@ -2,6 +2,7 @@ export interface ImagePop {
   render: string;
   width: number;
   height: number;
+  type?: string;
 }
 
 export interface Summaries {
@@ -14,6 +15,7 @@ export interface Summaries {
 
 export interface CarouselProps {
   summaries: Summaries[];
+  type?: string;
 }
 
 export interface Summary {
@@ -28,4 +30,5 @@ export interface DescriptionProps {
 
 export interface MediaCardProps {
   render: Summaries[];
+  type?: string;
 }
