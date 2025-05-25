@@ -4,10 +4,10 @@ export default {
   content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      boxShadow: {
+        "custom-hover": "4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15)",
       },
+
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0" },

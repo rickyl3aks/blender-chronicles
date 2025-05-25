@@ -19,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={roboto.className}>
-      <body>{children}</body>
+      <body>
+        <div className="striped-bg" />
+        <div className="container">{children}</div>
+      </body>
     </html>
   );
 }
