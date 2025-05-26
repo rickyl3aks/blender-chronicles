@@ -31,16 +31,10 @@ const Home = () => {
           Dive into my journey of learning 3D design, Blender techniques, and creative explorations. Here, you'll find projects, experiments, and
           reflections as I continue to grow in the world of 3D art
         </p>
-        <button className="btn-projects flex items-center gap-2 relative overflow-hidden px-4 py-2">
-          projects
-          <span className="inline-flex justify-center items-center w-[20px] h-[20px] rounded-full border-2 border-black text-white bg-black animate-bounceArrow">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth={3}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-          </span>
-        </button>
 
-        <DropDown />
+        <div className="col-start-1 col-end-2 h-[50px] w-[140px]">
+          <DropDown />
+        </div>
 
         <div className="right-box"></div>
       </div>
