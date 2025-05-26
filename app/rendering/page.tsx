@@ -1,5 +1,6 @@
 import { Button } from "../components/button";
 import MediaCard from "../components/mediaCard";
+import Navbar from "../components/navBar";
 import { Summaries } from "../types/types";
 
 const Projects = async () => {
@@ -7,6 +8,7 @@ const Projects = async () => {
 
   return (
     <div className="m-4 space-y-12">
+      <Navbar />
       <Button />
 
       <div className="flex flex-col items-center justify-start min-h-screen space-y-10 px-6">
