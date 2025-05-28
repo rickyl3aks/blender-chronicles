@@ -1,11 +1,12 @@
 import Image from "next/image";
-import ImagePopup from "./image-popup";
 
 const Home = () => {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <ImagePopup render="emil" width={200} height={50} />
+        <video width="640" height="360" autoPlay muted loop playsInline className="rounded-[0.75rem]">
+          <source src={`/images/homepage/blender-logo.mp4`} type="video/mp4" /> Your browser does not support the video tag.
+        </video>
         <h1 className="text-3xl font-bold text-center sm:text-left">Welcome to Blender Chronicles</h1>
         <p className="text-base text-center sm:text-left text-gray-600 dark:text-gray-400">
           Dive into my journey of learning 3D design, Blender techniques, and creative explorations. Here, you'll find projects, experiments, and
