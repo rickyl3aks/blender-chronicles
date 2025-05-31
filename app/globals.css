@@ -29,11 +29,22 @@ body {
 .right-box {
   height: 300px;
   border-radius: 15px;
-  border: 5px solid black;
+  border: 5px solid white;
   background-color: white;
   grid-column: 3 / 4;
   grid-row: 1 / 2;
-  box-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 3px 0px black, 9px 8px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .buttons-right-grid {

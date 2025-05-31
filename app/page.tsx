@@ -35,8 +35,11 @@ const Home = () => {
         <div className="col-start-1 col-end-2 h-[50px] w-[140px]">
           <DropDown />
         </div>
-
-        <div className="right-box"></div>
+        <div className="right-box">
+          <video width="640" height="360" autoPlay muted loop playsInline className="rounded-[0.75rem]">
+            <source src={`/images/homepage/blender-logo.mp4`} type="video/mp4" /> Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
 
       <div className="buttons-right-grid">
