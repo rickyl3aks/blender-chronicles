@@ -152,20 +152,17 @@ button:hover {
   box-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
-@media only screen and (max-width: 600px) {
-  .main-title {
-    font-size: 1.3rem;
+@media only screen and (max-width: 800px) {
+  .main-layout {
+    display: block;
   }
 
-  .vertical-text {
-    font-size: 1.5rem;
-    width: auto;
-  }
+  .vertical-rl {
+      writing-mode: initial;
+    }
 
-  /*to review*/
   .right-box {
-    position: relative;
-    grid-column: auto !important;
-    grid-row: auto !important;
+    display: block;
+    margin-top: 100px;
   }
 }

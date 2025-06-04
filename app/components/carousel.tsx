@@ -27,7 +27,15 @@ const Carousel = ({ summaries, type }: CarouselProps) => {
 
             <div className="relative">
               {summaries[currentIndex]?.video ? (
-                <video width="640" height="360" autoPlay muted loop controls className="rounded-[0.75rem]">
+                <video
+                  width="640"
+                  height="360"
+                  autoPlay
+                  muted
+                  loop
+                  controls
+                  className="cursor-pointer border-[5px] border-white rounded-[0.75rem] hover:border-gray-300 shadow-[4px_3px_0px_black,9px_8px_0px_rgba(0,0,0,0.15)]"
+                >
                   <source src={`/images/render/${summaries[currentIndex].render}.mp4`} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>

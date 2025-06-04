@@ -26,7 +26,6 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
     );
   } catch (error) {
     console.error("Error loading category data:", error);
-    console.log("category ", category);
     return <div>Category not found.</div>;
   }
 }

@@ -36,7 +36,7 @@ const ImagePopup = ({ render, width, height, type }: ImagePop) => {
         width={width}
         height={height}
         priority
-        className="cursor-pointer border-4  rounded-[0.75rem] hover:border-gray-300"
+        className="cursor-pointer border-[5px] border-white rounded-[0.75rem] hover:border-gray-300 shadow-[4px_3px_0px_black,9px_8px_0px_rgba(0,0,0,0.15)]"
         onContextMenu={(e) => e.preventDefault()}
         onClick={openModal}
       />

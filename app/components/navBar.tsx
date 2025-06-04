@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { categories } from "./dropDown";
 import Image from "next/image";
+import { categories } from "./constant";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Image src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Logo" />
+          <Image src="https://flowbite.com/docs/images/logo.svg" className="h-8" width={100} height={100} alt="Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">YourLogo</span>
         </Link>
 

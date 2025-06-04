@@ -12,7 +12,7 @@ const pacifico = Pacifico({
   weight: "400",
 });
 
-const Home = () => {
+const Home = async () => {
   return (
     <div className="p-8 min-h-screen box-border relative">
       <div className="fixed top-0 left-0 w-[100vw] h-[100vh] opacity-50 -z-10 [background:repeating-linear-gradient(-45deg,transparent_0,transparent_28%,#c7c7c7_28%,#c7c7c7_35%,#f1ebde_35%,#f1ebde_38%,#c7c7c7_38%,#c7c7c7_43%,#f1ebde_43%,#f1ebde_46%,#c7c7c7_46%,#c7c7c7_52%,#f1ebde_52%,#f1ebde_56%,#c7c7c7_56%,#c7c7c7_64%,transparent_64%)]" />
@@ -33,7 +33,7 @@ const Home = () => {
         </p>
 
         <div className="col-start-1 col-end-2 h-[50px] w-[140px]">
-          <DropDown />
+          <DropDown></DropDown>
         </div>
         <div className="right-box">
           <video width="640" height="360" autoPlay muted loop playsInline className="rounded-[0.75rem]">
