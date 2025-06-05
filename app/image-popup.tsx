@@ -47,7 +47,7 @@ const ImagePopup = ({ render, width, height, type }: ImagePop) => {
             <button
               title="close"
               onClick={closeModal}
-              className="cursor-pointer absolute top-2 right-2 text-white text-2xl bg-black w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-800"
+              className="btn cursor-pointer absolute top-2 right-2 text-white text-2xl bg-black w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-800"
             >
               &times;
             </button>

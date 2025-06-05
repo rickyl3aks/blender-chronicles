@@ -8,12 +8,41 @@ body {
   background-color: #f1ebde;
 }
 
+.btn {
+  width: auto;
+  border-radius: 50%;
+  color: black
+}
+
+.hamburger {
+  width: auto;
+  color: black
+}
+
 /*to review*/
 .inner-container {
   display: grid;
   height: 100px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px;
+}
+
+.vertical-rl {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 4vw;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  writing-mode: vertical-rl;
+  width: 100px;
+  margin-top: 1.25rem;
+  text-shadow: 4px 3px 0 #fff, 9px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 4vw;
+  margin: 0;
+  white-space: nowrap;
 }
 
 /*to review*/
@@ -157,12 +186,24 @@ button:hover {
     display: block;
   }
 
+  .title {
+    font-size: 2rem;
+  }
+
   .vertical-rl {
-      writing-mode: initial;
-    }
+    font-size: 2rem;
+    position: absolute;
+    top: 50px;
+    writing-mode: horizontal-tb;
+  }
 
   .right-box {
     display: block;
-    margin-top: 100px;
+    margin: 4rem auto;
+  }
+
+  .buttons-right-grid {
+    display: flex;
+    margin-top:  10rem ;
   }
 }

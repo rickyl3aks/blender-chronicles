@@ -45,19 +45,20 @@ const Carousel = ({ summaries, type }: CarouselProps) => {
 
               {summaries.length > 1 && (
                 <>
-                  {" "}
                   <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-4">
                     <button
+                      title="prev"
                       onClick={prevSlide}
-                      className="cursor-pointer text-white bg-black bg-opacity-50 rounded-full w-8 h-8 sm:w-12 sm:h-12 hover:bg-opacity-75 transition duration-300"
+                      className="btn cursor-pointer text-white bg-black bg-opacity-50 rounded-full w-8 h-8 sm:w-12 sm:h-12 hover:bg-opacity-75 transition duration-300"
                     >
                       &lt;
                     </button>
                   </div>
                   <div className="absolute top-1/2 right-0 transform -translate-y-1/2 px-4">
                     <button
+                      title="next"
                       onClick={nextSlide}
-                      className="cursor-pointer text-white bg-black bg-opacity-50 rounded-full w-8 h-8 sm:w-12 sm:h-12 hover:bg-opacity-75 transition duration-300"
+                      className="btn cursor-pointer text-white bg-black bg-opacity-50 rounded-full w-8 h-8 sm:w-12 sm:h-12 hover:bg-opacity-75 transition duration-300"
                     >
                       &gt;
                     </button>

@@ -2,8 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { categories } from "./constant";
+import InfoCard from "./infoCard";
 
 interface Summary {
   title: string;
@@ -13,66 +13,49 @@ interface Summary {
   link?: string;
 }
 
-interface CategoryData {
+export interface CategoryData {
   summaries: Summary[];
 }
 
-type DataByCategory = {
-  [slug: string]: CategoryData | null;
-};
+export type DataByCategory = Record<string, CategoryData | null>;
 
 export default function DropDown() {
   const [open, setOpen] = useState(false);
-  const [dataByCategory, setDataByCategory] = useState<DataByCategory>({});
+  const [data, setData] = useState<DataByCategory>({});
   const closeTimeout = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    async function loadData() {
-      const results: DataByCategory = {};
-
-      await Promise.all(
+    (async () => {
+      const results: [string, CategoryData | null][] = await Promise.all(
         categories.map(async ({ slug }) => {
           try {
             const mod = await import(`../data/${slug}.json`);
-            results[slug] = mod.default as CategoryData;
+            return [slug, mod.default as CategoryData];
           } catch (e) {
             console.error(`Failed to load ${slug}.json`, e);
-            results[slug] = null;
+            return [slug, null];
           }
         })
       );
-
-      setDataByCategory(results);
-    }
-
-    loadData();
+      setData(Object.fromEntries(results));
+    })();
   }, []);
 
-  const getLatestSummary = (summaries?: Summary[] | null): Summary | null => {
-    if (!summaries || summaries.length === 0) return null;
-    return summaries.reduce((latest, current) => (current.date > latest.date ? current : latest));
+  const clearCloseTimeout = () => {
+    if (closeTimeout.current) clearTimeout(closeTimeout.current);
   };
 
-  const openDropdown = () => {
-    if (closeTimeout.current) {
-      clearTimeout(closeTimeout.current);
-      closeTimeout.current = null;
-    }
-    setOpen(true);
-  };
-
-  const closeDropdown = () => {
-    closeTimeout.current = setTimeout(() => {
-      setOpen(false);
-      closeTimeout.current = null;
-    }, 400);
+  const toggle = () => (open ? setOpen(false) : (clearCloseTimeout(), setOpen(true)));
+  const close = () => {
+    closeTimeout.current = setTimeout(() => setOpen(false), 400);
   };
 
   return (
-    <div className="relative inline-block">
+    <div className="relative inline-block z-[5]">
       <button
-        onMouseEnter={openDropdown}
-        onMouseLeave={closeDropdown}
+        onClick={toggle}
+        onMouseEnter={() => (clearCloseTimeout(), setOpen(true))}
+        onMouseLeave={close}
         className="btn-projects flex items-center gap-2 px-4 py-2 relative overflow-hidden"
         type="button"
       >
@@ -86,27 +69,21 @@ export default function DropDown() {
 
       {open && (
         <ul
-          onMouseEnter={openDropdown}
-          onMouseLeave={closeDropdown}
-          className={`absolute mt-2 left-0 w-[400px] max-sm:w-[300px] bg-white shadow-lg z-10 rounded-lg border-[3px] border-black overflow-hidden
+          onMouseEnter={() => (clearCloseTimeout(), setOpen(true))}
+          onMouseLeave={close}
+          className={`absolute mt-2 left-0 w-[500px] max-sm:w-[350px] bg-white shadow-lg z-10 rounded-lg border-[3px] border-black overflow-hidden
             transition-all duration-300 ease-in-out
             transform origin-top
             ${open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}`}
         >
           {categories.map(({ slug, label, folder }) => {
-            const latestSummary = getLatestSummary(dataByCategory[slug]?.summaries);
+            const summaries = data[slug]?.summaries;
+            const latest = summaries?.reduce((a, b) => (b.date > a.date ? b : a), summaries?.[0]);
 
             return (
               <li key={slug}>
-                <Link href={`section/${slug}`} className="flex items-center gap-4 px-4 py-2 hover:bg-gray-200 text-black">
-                  <div className="rounded-[10px] overflow-hidden">
-                    {latestSummary ? (
-                      <Image src={`/images/render/${folder}/${latestSummary.render}.png`} alt={latestSummary.title} width={150} height={150} />
-                    ) : (
-                      <div>No Image</div>
-                    )}
-                  </div>
-                  <div className="text-base font-medium">{label}</div>
+                <Link href={`section/${slug}`} className="">
+                  <InfoCard latest={latest} folder={folder} label={label} />
                 </Link>
               </li>
             );

@@ -1,4 +1,3 @@
-import { Button } from "@/app/components/button";
 import MediaCard from "@/app/components/mediaCard";
 import Navbar from "@/app/components/navBar";
 
@@ -11,7 +10,6 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
     return (
       <div className="m-4 space-y-12">
         <Navbar />
-        <Button />
         <div className="flex flex-col items-center justify-start min-h-screen space-y-10 px-6">
           <div>
             <MediaCard render={summaries} type={lowPoly} />
