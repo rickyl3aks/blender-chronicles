@@ -84,7 +84,7 @@ body {
   position: relative;
   color: white;
   overflow: hidden;
-  background-color: #3b82f6;
+  background-color: #111827;
   box-shadow: 2px 2px 0px #fff, 4px 4px 0px rgba(0, 0, 0, 0.1);
   transition: color 0.3s ease;
 }

@@ -50,7 +50,7 @@ export default function Navbar() {
           </svg>
         </button>
 
-        <div className={`${isOpen ? "block" : "hidden"} absolute top-20 left-0 z-[10]  w-full lg:hidden`} id="navbar-default-mobile">
+        <div className={`${isOpen ? "block" : "hidden"} absolute top-25 left-0 z-[10]  w-full lg:hidden`} id="navbar-default-mobile">
           <ul className="font-medium flex flex-col p-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
             {categories.map(({ slug, label, folder }) => {
               const isActive = pathname === slug;
