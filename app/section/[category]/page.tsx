@@ -15,7 +15,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
             <MediaCard render={summaries} type={lowPoly} />
           </div>
 
-          <div className="text-center animate-bounceSlow">
+          <div className="fixed bottom-0 left-0 w-full text-center animate-bounceSlow bg-white py-4">
             <h2 className="text-2xl font-semibold text-gray-700">More to come...</h2>
             <p className="text-lg text-gray-600">Stay tuned for more exciting designs and experiments.</p>
           </div>

@@ -34,7 +34,7 @@ export default function Navbar() {
     <nav className=" bg-white border-gray-200 dark:bg-gray-900">
       <div className="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Image src="/images/logo/logo.png" className="h-8" width={30} height={30} alt="Logo" />
+          <Image src="/images/logo/logo.png"  width={50} height={50} alt="Logo" />
         </Link>
 
         <button
@@ -85,7 +85,7 @@ export default function Navbar() {
                   <Link
                     href={slug}
                     onClick={() => setIsOpen(false)}
-                    className={`block py-2 px-3 rounded-sm md:p-0 ${
+                    className={`text-[2rem] block py-2 px-3 rounded-sm md:p-0 ${
                       isActive
                         ? "text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500"
                         : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"

@@ -71,10 +71,7 @@ export default function DropDown() {
         <ul
           onMouseEnter={() => (clearCloseTimeout(), setOpen(true))}
           onMouseLeave={close}
-          className={`absolute mt-2 left-0 w-[500px] max-sm:w-[350px] bg-white shadow-lg z-10 rounded-lg border-[3px] border-black overflow-hidden
-            transition-all duration-300 ease-in-out
-            transform origin-top
-            ${open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}`}
+          className={`absolute mt-2 left-0 w-[500px] max-sm:w-[350px] font-medium flex flex-col p-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700`}
         >
           {categories.map(({ slug, label, folder }) => {
             const summaries = data[slug]?.summaries;
@@ -82,7 +79,10 @@ export default function DropDown() {
 
             return (
               <li key={slug}>
-                <Link href={`section/${slug}`} className="">
+                <Link
+                  href={`section/${slug}`}
+                  className={`flex items-center gap-2 py-2 px-3 rounded-sm text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700`}
+                >
                   <InfoCard latest={latest} folder={folder} label={label} />
                 </Link>
               </li>

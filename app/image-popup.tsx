@@ -44,13 +44,13 @@ const ImagePopup = ({ render, width, height, type }: ImagePop) => {
       {isModalOpen && (
         <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50" onClick={closeModal}>
           <div className="relative m-4 max-w-full max-h-full" onClick={(e) => e.stopPropagation()}>
-            <button
+            <div
               title="close"
               onClick={closeModal}
-              className="btn cursor-pointer absolute top-2 right-2 text-white text-2xl bg-black w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-800"
+              className="btn relative top-10 left-5 cursor-pointer bg-white border-[2px] border-black rounded-md hover:shadow-[4px_3px_0px_black,9px_8px_0px_rgba(0,0,0,0.15)] flex items-center justify-center"
             >
               &times;
-            </button>
+            </div>
             {/* <ThreeJSModal /> */}
             <Image
               src={`/images/render/${type ? `${type}/` : ""}${render}.png`}

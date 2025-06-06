@@ -21,7 +21,7 @@ const Carousel = ({ summaries, type }: CarouselProps) => {
       <div className="relative">
         <div className="flex items-center justify-center space-x-4">
           <div>
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-left sm:text-left text-gradient bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500 mb-6">
+            <h1 className="text-[3rem] sm:text-[4rem] font-extrabold text-left sm:text-left text-gradient bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500 mb-6">
               {summaries[currentIndex].title}
             </h1>
 
@@ -46,22 +46,34 @@ const Carousel = ({ summaries, type }: CarouselProps) => {
               {summaries.length > 1 && (
                 <>
                   <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-4">
-                    <button
+                    <span
                       title="prev"
                       onClick={prevSlide}
-                      className="btn cursor-pointer text-white bg-black bg-opacity-50 rounded-full w-8 h-8 sm:w-12 sm:h-12 hover:bg-opacity-75 transition duration-300"
+                      className="btn cursor-pointer bg-white border-[2px] border-black rounded-md hover:shadow-[4px_3px_0px_black,9px_8px_0px_rgba(0,0,0,0.15)] flex items-center justify-center"
                     >
-                      &lt;
-                    </button>
+                      <svg className="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
                   </div>
                   <div className="absolute top-1/2 right-0 transform -translate-y-1/2 px-4">
-                    <button
+                    <span
                       title="next"
                       onClick={nextSlide}
-                      className="btn cursor-pointer text-white bg-black bg-opacity-50 rounded-full w-8 h-8 sm:w-12 sm:h-12 hover:bg-opacity-75 transition duration-300"
+                      className="btn cursor-pointer bg-white border-[2px] border-black rounded-md hover:shadow-[4px_3px_0px_black,9px_8px_0px_rgba(0,0,0,0.15)] flex items-center justify-center"
                     >
-                      &gt;
-                    </button>
+                      <svg className="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
                   </div>
                   <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold text-xs sm:text-sm py-0.5 px-2 sm:py-1 sm:px-3 rounded-full shadow-md opacity-80">
                     {currentIndex + 1}/{summaries.length}
