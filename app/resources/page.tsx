@@ -21,7 +21,7 @@ const Resources = async () => {
                 </a>
                 <p className="text-sm text-gray-700 dark:text-gray-400 mt-1">{resource.description}</p>
               </div>
-              <Image src={resource.img} alt={resource.title} className="w-[50px] h-[50px] rounded-full" />
+              <Image width={50} height={50} src={resource.img} alt={resource.title} className="w-[50px] h-[50px] rounded-full" />
             </li>
           </ul>
         );
