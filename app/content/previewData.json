@@ -1,0 +1,22 @@
+{
+  "previewData": [
+    {
+      "title": "📝 Journey",
+      "description": "See how I learn step by step, week by week. I share experiments, thoughts, and progress",
+      "label": "Read the Journey →",
+      "href": "journey"
+    },
+    {
+      "title": "🖼️ Gallery",
+      "description": "Check out my best renders, finished pieces, and proud moments from this creative path",
+      "label": "See the Gallery →",
+      "href": "gallery"
+    },
+    {
+      "title": "🔗 Resources",
+      "description": "Links to tutorials, courses, and tools that helped me — from CG Cookie to YouTube gems",
+      "label": "View Resources →",
+      "href": "resources"
+    }
+  ]
+}
