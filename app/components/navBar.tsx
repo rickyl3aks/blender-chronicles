@@ -26,37 +26,37 @@ const Navbar = () => {
         <>
           <nav className="bg-white dark:bg-gray-900 shadow-md">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-              <div className="relative flex h-20 items-center justify-between">
-                <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <div className="flex h-20 items-center justify-between">
+                <div className="flex items-center">
+                  <Image width={100} height={100} className="h-15 w-auto" src="/images/logo/logo.png" alt="logo" />
+                </div>
+
+                <div className="hidden sm:block">
+                  <div className="flex space-x-4">
+                    {navigation.map((item) => {
+                      const isActive = pathname === item.href;
+                      return (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className={classNames(
+                            isActive ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            "rounded-md px-3 py-2 text-[1.5rem] font-medium"
+                          )}
+                          aria-current={isActive ? "page" : undefined}
+                        >
+                          {item.name}
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                <div className="sm:hidden ml-auto">
+                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? <XMarkIcon className="block h-6 w-6" aria-hidden="true" /> : <Bars3Icon className="block h-6 w-6" aria-hidden="true" />}
                   </Disclosure.Button>
-                </div>
-                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                  <div className="flex flex-shrink-0 items-center">
-                    <Image width={100} height={100} className="h-15 w-auto" src="/images/logo/logo.png" alt="logo" />
-                  </div>
-                  <div className="hidden sm:ml-6 sm:block">
-                    <div className="flex space-x-4">
-                      {navigation.map((item) => {
-                        const isActive = pathname === item.href;
-                        return (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            className={classNames(
-                              isActive ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                              "rounded-md px-3 py-2 text-[1.5rem] font-medium"
-                            )}
-                            aria-current={isActive ? "page" : undefined}
-                          >
-                            {item.name}
-                          </a>
-                        );
-                      })}
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

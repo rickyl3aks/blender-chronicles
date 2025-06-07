@@ -1,12 +1,12 @@
 import React from "react";
-import { items } from "../types/types";
+import { Items } from "../types/types";
 
 const Preview = async () => {
   const { previewData } = await import("../content/previewData.json");
 
   return (
     <section>
-      {previewData.map((items: items) => {
+      {previewData.map((items: Items) => {
         return (
           <div key={items.title} className="my-8 p-4 rounded bg-[var(--bg-alt)] shadow-md">
             <h2 className="mb-2">{items.title}</h2>

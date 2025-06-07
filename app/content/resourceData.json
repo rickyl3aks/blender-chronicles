@@ -1,0 +1,60 @@
+{
+  "resourceData": [
+    {
+      "title": "Thomas Colin 3D",
+      "url": "https://www.youtube.com/@ThomasColin3D",
+      "tags": ["YouTube", "Mentorship"],
+      "description": "Advanced Blender tutorials and mentorship in hard surface modeling",
+      "img": "https://placehold.co/50x50?text=TC",
+      "alt": "Thomas Colin"
+    },
+    {
+      "title": "CG Cookie",
+      "url": "https://cgcookie.com",
+      "tags": ["Courses", "Tutorials"],
+      "description": "Great for understanding fundamentals and advanced Blender workflows",
+      "img": "https://placehold.co/50x50?text=CG",
+      "alt": "CG Cookie"
+    },
+    {
+      "title": "Blender Guru",
+      "url": "https://www.blenderguru.com/",
+      "tags": ["YouTube", "Tutorials"],
+      "description": "Beginner and advanced tutorials including the famous donut series",
+      "img": "https://placehold.co/50x50?text=BG",
+      "alt": "Blender Guru"
+    },
+    {
+      "title": "Ryan King Art",
+      "url": "https://www.youtube.com/@RyanKingArt",
+      "tags": ["YouTube", "Tutorials"],
+      "description": "Beginner-friendly Blender tutorials, procedural materials, and 3D assets",
+      "img": "https://placehold.co/50x50?text=RK",
+      "alt": "Ryan King Art"
+    },
+    {
+      "title": "Ducky 3D",
+      "url": "https://www.youtube.com/@TheDucky3D",
+      "tags": ["YouTube", "Tutorials"],
+      "description": "Stylized procedural materials and motion graphic effects",
+      "img": "https://placehold.co/50x50?text=DU",
+      "alt": "Ducky 3D"
+    },
+    {
+      "title": "Gamedev.tv",
+      "url": "https://www.gamedev.tv/",
+      "tags": ["Courses", "Not only Blender"],
+      "description": "Courses on Blender, Unity, Unreal Engine, and game development",
+      "img": "https://placehold.co/50x50?text=GD",
+      "alt": "Gamedev.tv"
+    },
+    {
+      "title": "Poly Haven",
+      "url": "https://polyhaven.com/",
+      "tags": ["Resource", "Textures"],
+      "description": "No sign-up, CC0 license – super useful for renders",
+      "img": "https://placehold.co/50x50?text=PH",
+      "alt": "Poly Haven"
+    }
+  ]
+}

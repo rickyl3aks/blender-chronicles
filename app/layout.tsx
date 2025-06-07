@@ -23,6 +23,7 @@ export default function RootLayout({
       <body className="text-xl">
         <Navbar />
         {children}
+        <p className="mt-30">©{new Date().getFullYear()} by Riccardo Consolandi | All Rights Reserved </p>
       </body>
     </html>
   );
