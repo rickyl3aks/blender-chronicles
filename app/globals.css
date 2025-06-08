@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+  --text-regular: 1.5rem;
+}
+
 :root {
   --bg: #ffffff;
   --text: #111;

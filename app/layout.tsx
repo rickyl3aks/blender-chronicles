@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={roboto.className}>
-      <body className="text-xl">
+      <body className="text-regular">
         <Navbar />
         {children}
         <p className="mt-30">©{new Date().getFullYear()} by Riccardo Consolandi | All Rights Reserved </p>

@@ -1,0 +1,10 @@
+{
+  "galleryItems": [
+    { "id": 1, "src": "https://placehold.co/300x200?text=Render+1", "alt": "Motion Graphic 1", "category": "motion" },
+    { "id": 2, "src": "/images/render/lowPoly/giraffe.png", "alt": "Giraffe", "category": "lowpoly" },
+    { "id": 3, "src": "https://placehold.co/300x200?text=Render+3", "alt": "Stylized 1", "category": "stylized" },
+    { "id": 4, "src": "/images/render/realism/pokeball.png", "alt": "pokeball", "category": "realism" },
+    { "id": 5, "src": "/images/render/motion/domino.mp4", "alt": "domino", "category": "motion" },
+    { "id": 6, "src": "/images/render/realism/tea-pot.png", "alt": "tea-pot", "category": "realism" }
+  ]
+}
