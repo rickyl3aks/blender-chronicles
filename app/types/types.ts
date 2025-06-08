@@ -27,3 +27,18 @@ export interface Resource {
   image: string;
   alt: string;
 }
+export interface LightboxProps {
+  src: string;
+  alt?: string;
+  onClose: () => void;
+}
+
+export interface CarouselItem {
+  id: string | number;
+  src: string;
+  alt: string;
+}
+
+export interface CarouselProps {
+  items: CarouselItem[];
+}

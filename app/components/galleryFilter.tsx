@@ -62,14 +62,21 @@ const GalleryFilter = () => {
       {lightboxSrc && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50" onClick={() => setLightboxSrc(null)}>
           {lightboxSrc.endsWith(".mp4") ? (
-            <video src={lightboxSrc} autoPlay loop controls className="max-w-4xl max-h-[80vh] rounded" onClick={(e) => e.stopPropagation()} />
+            <video
+              src={lightboxSrc}
+              autoPlay
+              loop
+              controls
+              className="w-full sm:max-w-4xl h-auto max-h-[80vh] rounded"
+              onClick={(e) => e.stopPropagation()}
+            />
           ) : (
             <Image
               width={800}
               height={600}
               src={lightboxSrc}
               alt="Expanded view"
-              className="max-w-4xl max-h-[80vh] rounded"
+              className="w-full sm:max-w-4xl h-auto max-h-[80vh] rounded"
               onClick={(e) => e.stopPropagation()}
             />
           )}
