@@ -7,7 +7,7 @@ const resourcesInfo: ResourcesData[] = resourceData.resource;
 const Resources = () => {
   return (
     <section className="p-8 max-w-[900px] mx-auto">
-      <h2 className="text-4xl font-bold mb-6">Resources</h2>
+      <h2 className="font-title text-[var(--accent)] max-sm:text-4xl text-5xl font-bold mb-6">Resources</h2>
       {resourcesInfo.map((resource) => {
         return (
           <ul key={resource.title} className="my-8 p-4 rounded bg-[var(--bg-alt)] shadow-md list-none pl-0 space-y-6">

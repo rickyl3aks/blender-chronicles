@@ -8,10 +8,10 @@ import { usePathname } from "next/navigation";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "Journey", href: "journey", current: false },
-  { name: "Gallery", href: "gallery", current: false },
-  { name: "Resources", href: "resources", current: false },
-  { name: "About", href: "about", current: false },
+  { name: "Journey", href: "/journey", current: false },
+  { name: "Gallery", href: "/gallery", current: false },
+  { name: "Resources", href: "/resources", current: false },
+  { name: "About", href: "/about", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -40,7 +40,7 @@ const Navbar = () => {
                           key={item.name}
                           href={item.href}
                           className={classNames(
-                            isActive ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            isActive ? "text-[var(--accent)]" : "text-gray-300 hover:bg-gray-700 hover:text-white",
                             "rounded-md px-3 py-2 text-[1.5rem] font-medium"
                           )}
                           aria-current={isActive ? "page" : undefined}

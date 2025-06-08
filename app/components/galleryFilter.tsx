@@ -21,7 +21,7 @@ const GalleryFilter = () => {
           <button
             key={cat.value}
             onClick={() => setFilter(cat.value)}
-            className={`px-4 py-2 rounded ${filter === cat.value ? "bg-indigo-600 text-white" : "bg-gray-200 hover:bg-gray-300"}`}
+            className={`cursor-pointer px-4 py-2 rounded ${filter === cat.value ? "bg-indigo-600 text-white" : "bg-gray-200 hover:bg-gray-300"}`}
             type="button"
           >
             {cat.label}

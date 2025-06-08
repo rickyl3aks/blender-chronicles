@@ -4,7 +4,7 @@ const Gallery = async () => {
   return (
     <div>
       <section id="gallery" className="p-6">
-        <h2 className="text-4xl font-bold mb-6">Gallery</h2>
+        <h1 className="font-title text-[var(--accent)] max-sm:text-4xl text-5xl font-bold mb-6">Gallery</h1>
         <GalleryFilter />
       </section>
     </div>

@@ -1,18 +1,12 @@
-// import { Manrope } from "next/font/google";
 import HeroPage from "./components/heroPage";
 import Preview from "./components/preview";
 import Image from "next/image";
 
-// const manrope = Manrope({
-//   subsets: ["latin"],
-//   weight: "400",
-// });
-
 const Home = () => {
   return (
-    <div className="p-8 max-w-[900px] mx-auto">
+    <div>
       <section className="text-center mt-50">
-        <h2 className="text-4xl m-5 font-bold">Latest Render</h2>
+        <h2 className="max-sm:text-4xl text-5xl font-title text-[var(--accent)] m-5 font-extrabold">Latest Render</h2>
         <Image
           width={800}
           height={400}
