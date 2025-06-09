@@ -91,6 +91,14 @@
       "description": "This is a wireframe model created in Blender. Recreating this object helped me deepen my understanding of modeling. It’s part of a larger kitchen project that I’ll be updating here soon",
       "render": "blender-wireframe",
       "date": 1730505600000
+    },
+    {
+      "id": 12,
+      "title": "Galton board",
+      "src": "/images/render/projects/galton-board.mp4",
+      "description": "Created during a CG Cookie course on rigid body physics, this Galton board was a fun project to explore. I especially enjoyed the texturing process and was really pleased with how the final result turned out",
+      "render": "galton-board",
+      "date": 1745712000000
     }
   ]
 }
