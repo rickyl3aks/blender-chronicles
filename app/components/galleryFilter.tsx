@@ -24,7 +24,7 @@ const GalleryFilter = () => {
             key={cat.value}
             onClick={() => setFilter(cat.value)}
             className={`cursor-pointer px-4 py-2 rounded transition-colors ${
-              filter === cat.value ? "bg-indigo-600 text-white" : "bg-gray-200 hover:bg-gray-300"
+              filter === cat.value ? "bg-[#5a3f58] text-white" : "bg-[#C6A4B6] hover:bg-[#a18695]"
             }`}
             type="button"
           >
@@ -64,14 +64,7 @@ const GalleryFilter = () => {
         )}
       </div>
 
-      {selectedItem && (
-        <Lightbox
-          src={selectedItem.src}
-          title={selectedItem.alt}
-          onClose={() => setSelectedItem(null)}
-          gallery={true}
-        />
-      )}
+      {selectedItem && <Lightbox src={selectedItem.src} title={selectedItem.alt} onClose={() => setSelectedItem(null)} gallery={true} />}
     </section>
   );
 };

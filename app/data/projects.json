@@ -12,7 +12,7 @@
       "id": 2,
       "title": "Pokeball",
       "src": "/images/render/realism/pokeball.png",
-      "description": "This Pokeball was created using techniques I learned from a /CG Cookie/ course. I explored texturing by applying various images to the object and gained a deeper understanding of shading nodes to fine-tune colors and achieve a stretched, aged appearance for the Pokeball",
+      "description": "This Pokeball was created using techniques I learned from a CG Cookie course. I explored texturing by applying various images to the object and gained a deeper understanding of shading nodes to fine-tune colors and achieve a stretched, aged appearance for the Pokeball",
       "render": "pokeball",
       "date": 1735207562000,
       "link": "https://cgcookie.com"
@@ -21,7 +21,7 @@
       "id": 3,
       "title": "Sci-fi Crate",
       "src": "/images/render/projects/sci-fi-crate.png",
-      "description": "This design was inspired by /CG Cookie/ course where I learned about 3D design and working with meshes. I applied principles of visual composition, using vibrant colors and gradients to create a futuristic sci-fi feel",
+      "description": "This design was inspired by CG Cookie course where I learned about 3D design and working with meshes. I applied principles of visual composition, using vibrant colors and gradients to create a futuristic sci-fi feel",
       "render": "sci-fi-crate",
       "date": 1726012800000,
       "link": "https://cgcookie.com"
@@ -30,7 +30,7 @@
       "id": 4,
       "title": "Coffee Cup",
       "src": "/images/render/projects/coffee-cup.png",
-      "description": "Another /CG Cookie/ exercise, this time a coffee cup. This task helped me understand how shadows enhance realism in objects",
+      "description": "Another CG Cookie exercise, this time a coffee cup. This task helped me understand how shadows enhance realism in objects",
       "render": "coffee-cup",
       "date": 1725926400000,
       "link": "https://cgcookie.com"
