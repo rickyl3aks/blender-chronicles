@@ -2,7 +2,7 @@
   "projectItems": [
     {
       "id": 1,
-      "alt": "Lightbulb",
+      "title": "Lightbulb",
       "src": "/images/render/projects/lightBulb.png",
       "description": "I created a scene featuring light bulbs, using the array modifier for duplication. I added a glowing light effect to the bulbs and designed a pavement-like background using different nodes",
       "render": "lightBulb",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "alt": "Pokeball",
+      "title": "Pokeball",
       "src": "/images/render/realism/pokeball.png",
       "description": "This Pokeball was created using techniques I learned from a /CG Cookie/ course. I explored texturing by applying various images to the object and gained a deeper understanding of shading nodes to fine-tune colors and achieve a stretched, aged appearance for the Pokeball",
       "render": "pokeball",
@@ -19,7 +19,7 @@
     },
     {
       "id": 3,
-      "alt": "Sci-fi Crate",
+      "title": "Sci-fi Crate",
       "src": "/images/render/projects/sci-fi-crate.png",
       "description": "This design was inspired by /CG Cookie/ course where I learned about 3D design and working with meshes. I applied principles of visual composition, using vibrant colors and gradients to create a futuristic sci-fi feel",
       "render": "sci-fi-crate",
@@ -28,7 +28,7 @@
     },
     {
       "id": 4,
-      "alt": "Coffee Cup",
+      "title": "Coffee Cup",
       "src": "/images/render/projects/coffee-cup.png",
       "description": "Another /CG Cookie/ exercise, this time a coffee cup. This task helped me understand how shadows enhance realism in objects",
       "render": "coffee-cup",
@@ -37,7 +37,7 @@
     },
     {
       "id": 5,
-      "alt": "Tea Pot",
+      "title": "Tea Pot",
       "src": "/images/render/realism/tea-pot.png",
       "description": "This teapot marks my first try at using geometry, which has significantly helped me enhance my skills by teaching me how shapes, proportions, and details come together to create a cohesive and realistic 3D model. It was a valuable learning experience that laid the foundation for future projects",
       "render": "tea-pot",
@@ -45,7 +45,7 @@
     },
     {
       "id": 6,
-      "alt": "Emil",
+      "title": "Emil",
       "src": "/images/render/projects/emil.png",
       "description": "This is Emil, my first attempt at sculpting. It’s inspired by one of my favourite games, /Nier: Automata/. While it’s not an exact replica, I hope to create more pieces like this in the future",
       "render": "emil",

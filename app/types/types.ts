@@ -33,12 +33,15 @@ export interface LightboxProps {
   onClose: () => void;
 }
 
-export interface CarouselItem {
+export interface ProjectItem {
   id: string | number;
+  title: string;
   src: string;
-  alt: string;
+  description: string;
+  render: string;
+  date: number;
 }
 
-export interface CarouselProps {
-  items: CarouselItem[];
+export interface ProjectProps {
+  items: ProjectItem[];
 }

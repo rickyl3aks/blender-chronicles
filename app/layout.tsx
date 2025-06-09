@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className={manrope.className}>
       <body className="text-regular">
         <Navbar />
-        <section className="p-8 max-w-[900px] mx-auto">{children}</section>
+        <section className="p-8 max-w-[950px] mx-auto">{children}</section>
         <p className="mt-30">©{new Date().getFullYear()} by Riccardo Consolandi | All Rights Reserved </p>
       </body>
     </html>
