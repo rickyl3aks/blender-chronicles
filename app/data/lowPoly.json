@@ -1,6 +1,13 @@
 {
   "summaries": [
     {
+      "title": "Rabbit",
+      "description": "This is a low-poly rabbit model that I created to practice my skills in 3D modeling and texturing. The focus was on creating a simple yet appealing design that captures the essence of a rabbit without going into too much detail, I've used a gradient for shading to make it look more appealing and give it the look of a more polished model",
+      "render": "rabbit",
+      "date": 1747484360,
+      "video": false
+    },
+    {
       "title": "Giraffe",
       "description": "This low-poly giraffe is part of my exploration into lighting techniques. I'm focusing less on detailed rendering and more on how light, shadow, and color can shape the mood and depth of a scene. It's a step in learning how to bring simple models to life through atmosphere",
       "render": "giraffe",

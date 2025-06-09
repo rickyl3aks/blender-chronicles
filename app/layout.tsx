@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 import type { Metadata } from "next";
 import "./globals.css";
 import { Manrope } from "next/font/google";
