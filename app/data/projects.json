@@ -51,6 +51,30 @@
       "render": "emil",
       "date": 1717977600000,
       "link": "https://www.square-enix-games.com/en_EU/games/nier-automata"
+    },
+    {
+      "id": 7,
+      "title": "Rabbit",
+      "src": "/images/render/projects/rabbit.png",
+      "description": "This is a low-poly rabbit model that I created to practice my skills in 3D modeling and texturing. The focus was on creating a simple yet appealing design that captures the essence of a rabbit without going into too much detail, I've used a gradient for shading to make it look more appealing and give it the look of a more polished model",
+      "render": "rabbit",
+      "date": 1747484360000
+    },
+    {
+      "id": 8,
+      "title": "Blender Logo",
+      "src": "/images/render/projects/blender-logo.mp4",
+      "description": "This is a simple animation of the Blender logo, created to practice my skills in animation and rendering. The focus was on creating a smooth and visually appealing animation that showcases the Blender logo in a dynamic way",
+      "render": "blender-logo",
+      "date": 1748380800000
+    },
+    {
+      "id": 9,
+      "title": "Doughnut",
+      "src": "/images/render/projects/doughnut.mp4",
+      "description": "This is my first 3D doughnut render, and I couldn’t go wrong following the Blender Guru tutorial. For anyone starting to learn Blender, following this tutorial is pretty much mandatory, it covers all the basics like modeling, texturing, and lighting to help you create realistic renders step by step",
+      "render": "doughnut",
+      "date": 1713523200000
     }
   ]
 }

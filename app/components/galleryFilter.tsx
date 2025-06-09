@@ -38,8 +38,8 @@ const GalleryFilter = () => {
           item.src.endsWith(".mp4") ? (
             <video
               key={item.id}
-              width={300}
-              height={200}
+              width={500}
+              height={300}
               className="cursor-pointer rounded shadow transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
               onClick={() => setSelectedItem(item)}
               autoPlay
@@ -53,8 +53,8 @@ const GalleryFilter = () => {
           ) : (
             <Image
               key={item.id}
-              width={300}
-              height={200}
+              width={500}
+              height={300}
               src={item.src}
               alt={item.alt}
               className="cursor-pointer rounded shadow transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"

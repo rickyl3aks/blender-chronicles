@@ -6,7 +6,7 @@ const resourcesInfo: ResourcesData[] = resourceData.resource;
 
 const Resources = () => {
   return (
-    <section className="p-8 max-w-[900px] mx-auto">
+    <section className="p-8 mx-auto">
       <h2 className="font-title text-[var(--accent)] max-sm:text-4xl text-5xl font-bold mb-6">Resources</h2>
       {resourcesInfo.map((resource) => {
         return (

@@ -53,11 +53,11 @@ const Lightbox = ({ src, title, description, date, gallery = false, onClose }: L
         {gallery && <p className="italic">{title}</p>}
 
         {date && (
-          <div className="mt-4 max-w-xl mx-auto text-center">
+          <div className="mt-4 max-w-[800px] ">
             <h2 className="text-4xl max-sm:text-2xl font-bold font-title text-[#C6A4B6]">{title}</h2>
-            <p className="mt-2 max-sm:text-sm">{description}</p>
+            <p className="text-left mt-2 max-sm:text-sm">{description}</p>
 
-            <p className="mt-1 italic max-sm:text-sm text-gray-300">{formatDate(date)}</p>
+            <p className="text-left text-xs mt-1 italic text-gray-300">{formatDate(date)}</p>
           </div>
         )}
         <button
