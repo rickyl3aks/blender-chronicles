@@ -4,6 +4,7 @@ export interface Category {
 }
 
 export interface ResourcesData {
+  id: number;
   title: string;
   url: string;
   tags: string[];

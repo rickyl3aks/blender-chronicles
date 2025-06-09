@@ -1,17 +1,17 @@
 "use client";
 
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Journey", href: "/journey", current: false },
-  { name: "Gallery", href: "/gallery", current: false },
-  { name: "Resources", href: "/resources", current: false },
-  { name: "About", href: "/about", current: false },
+  { name: "Home", href: "/" },
+  { name: "Journey", href: "/journey" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Resources", href: "/resources" },
+  { name: "About", href: "/about" },
 ];
 
 function classNames(...classes: string[]) {
@@ -20,18 +20,19 @@ function classNames(...classes: string[]) {
 
 const Navbar = () => {
   const pathname = usePathname();
+
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-800 fixed z-10 w-full">
       {({ open }) => (
         <>
           <nav>
-            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div className="mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex h-20 items-center justify-between">
                 <div className="flex items-center">
                   <Image width={100} height={100} className="h-15 w-auto" src="/images/logo/logo.png" alt="logo" />
                 </div>
 
-                <div className="hidden sm:block">
+                <div className="hidden mobile:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => {
                       const isActive = pathname === item.href;
@@ -52,34 +53,34 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <div className="sm:hidden ml-auto">
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <div className="mobile:hidden ml-auto">
+                  <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? <XMarkIcon className="block h-6 w-6" aria-hidden="true" /> : <Bars3Icon className="block h-6 w-6" aria-hidden="true" />}
-                  </Disclosure.Button>
+                  </DisclosureButton>
                 </div>
               </div>
             </div>
           </nav>
 
-          <Disclosure.Panel className="sm:hidden">
+          <DisclosurePanel className="mobile:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <DisclosureButton
                   key={item.name}
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    pathname === item.href ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
-                  aria-current={item.current ? "page" : undefined}
+                  aria-current={pathname === item.href ? "page" : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </DisclosureButton>
               ))}
             </div>
-          </Disclosure.Panel>
+          </DisclosurePanel>
         </>
       )}
     </Disclosure>

@@ -67,7 +67,9 @@ const GalleryFilter = () => {
       {selectedItem && (
         <Lightbox
           src={selectedItem.src}
+          title={selectedItem.alt}
           onClose={() => setSelectedItem(null)}
+          gallery={true}
         />
       )}
     </section>

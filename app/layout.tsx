@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Manrope } from "next/font/google";
 import Navbar from "./components/navBar";
+import Footer from "./components/footer";
 
 export const metadata: Metadata = {
   title: "Blender Chronicles",
@@ -22,8 +23,8 @@ export default function RootLayout({
     <html lang="en" className={manrope.className}>
       <body className="text-regular">
         <Navbar />
-        <section className="p-8 max-w-[950px] mx-auto">{children}</section>
-        <p className="mt-30">©{new Date().getFullYear()} by Riccardo Consolandi | All Rights Reserved </p>
+        <section className="min-h-screen pt-[10rem] max-w-[950px] mx-auto">{children}</section>
+        <Footer />
       </body>
     </html>
   );

@@ -8,8 +8,6 @@ export default async function NotFound() {
       <h1 className="text-4xl font-bold mt-6">404 - Page Not Found</h1>
       <p className="text-lg mt-4 text-center">Oops! The page you’re looking for doesn’t exist.</p>
       <div className="mt-8">
-        {" "}
-        {/* Increased margin-top for more space */}
         <Link
           href="/"
           passHref

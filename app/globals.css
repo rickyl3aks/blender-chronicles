@@ -5,11 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
 @theme {
   --text-regular: 1.5rem;
-  --font-title: 'Sora', sans-serif;
+  --font-title: "Sora", sans-serif;
+  --breakpoint-mobile: 900px;
 }
 
 :root {
