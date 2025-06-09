@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en" className={manrope.className}>
       <body className="text-regular">
         <Navbar />
-        <section className="min-h-screen pt-[10rem] max-w-[1200px] mx-auto">{children}</section>
+        <section className="min-h-screen pt-[10rem] max-w-[1600px] mx-auto">{children}</section>
         <Footer />
         <Analytics/>
       </body>

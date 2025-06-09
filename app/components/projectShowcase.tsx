@@ -23,7 +23,7 @@ const ProjectShowcase = ({ items }: ProjectProps) => {
 
   return (
     <div className="space-y-8">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {paginatedItems.map((item) => (
           <div
             key={item.id}

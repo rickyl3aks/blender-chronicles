@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -28,9 +29,9 @@ const Navbar = () => {
           <nav>
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex h-20 items-center justify-between">
-                <div className="flex items-center">
+                <Link href="/">
                   <Image width={100} height={100} className="h-15 w-auto" src="/images/logo/logo.png" alt="logo" priority={true} />
-                </div>
+                </Link>
 
                 <div className="hidden mobile:block">
                   <div className="flex space-x-4">

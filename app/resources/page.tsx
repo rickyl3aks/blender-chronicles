@@ -9,9 +9,7 @@ const Resources = () => {
     <section className="p-8 mx-auto">
       <h2 className="font-title text-[var(--accent)] max-sm:text-4xl text-5xl font-bold mb-6">Resources</h2>
       <p className="text-gray-500 mb-10">
-        This section highlights the essential platforms, tutorials, software, and communities that have supported and inspired me throughout my
-        learning process and creative work. From foundational courses to advanced tools, these resources have played a key role in helping me grow as
-        a designer and 3D artist
+        This section presents the core tools, courses, and communities that have fueled my growth as a designer and 3D artist
       </p>
       {resourcesInfo.map((resource) => {
         return (

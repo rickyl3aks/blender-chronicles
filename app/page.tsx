@@ -6,7 +6,7 @@ import { sortedProjects } from "./journey/page";
 const Home = () => {
   return (
     <div>
-      <section className="text-center mt-10">
+      <section className="text-center mt-10 p-6">
         <h2 className="max-sm:text-4xl text-5xl font-title text-[var(--accent)] m-5 font-extrabold">Latest Render</h2>
         {sortedProjects[0].src.endsWith(".mp4") ? (
           <video width={800} height={400} className="m-auto border-5 rounded-xl" autoPlay loop muted preload="metadata">
