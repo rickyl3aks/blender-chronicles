@@ -3,6 +3,7 @@ import "./globals.css";
 import { Manrope } from "next/font/google";
 import Navbar from "./components/navBar";
 import Footer from "./components/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Blender Chronicles",
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Navbar />
         <section className="min-h-screen pt-[10rem] max-w-[1200px] mx-auto">{children}</section>
         <Footer />
+        <Analytics/>
       </body>
     </html>
   );
