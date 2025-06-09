@@ -59,6 +59,7 @@ const GalleryFilter = () => {
               alt={item.alt}
               className="cursor-pointer rounded shadow transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
               onClick={() => setSelectedItem(item)}
+              priority={true}
             />
           )
         )}

@@ -51,6 +51,7 @@ const ProjectShowcase = ({ items }: ProjectProps) => {
                   src={item.src}
                   alt={item.title}
                   className="w-full h-auto transition-transform duration-300 group-hover:scale-130"
+                  priority={true}
                 />
               )}
             </div>

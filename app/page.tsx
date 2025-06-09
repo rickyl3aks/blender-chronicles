@@ -14,7 +14,14 @@ const Home = () => {
             Your browser does not support the video tag.
           </video>
         ) : (
-          <Image width={800} height={400} src={`${sortedProjects[0].src}`} className="m-auto border-5 rounded-xl" alt="Latest Render" />
+          <Image
+            width={800}
+            height={400}
+            src={`${sortedProjects[0].src}`}
+            className="m-auto border-5 rounded-xl"
+            alt="Latest Render"
+            priority={true}
+          />
         )}
         <a href="/journey" className="text-[var(--accent)] no-underline font-bold hover:underline">
           Read the Journey →

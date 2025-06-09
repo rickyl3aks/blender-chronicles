@@ -47,6 +47,7 @@ const Lightbox = ({ src, title, description, date, gallery = false, onClose }: L
             src={src}
             alt={title || ""}
             className="max-w-full max-h-[60vh] mx-auto rounded-md"
+            priority={true}
           />
         )}
 

@@ -35,7 +35,7 @@ const Resources = () => {
                   </div>
                   <p className="max-[900px]:text-[1.3rem] text-white mt-1">{resource.description}</p>
                 </div>
-                <Image width={50} height={50} src={resource.img} alt={resource.title} className="w-[50px] h-[50px] rounded-full" />
+                <Image width={50} height={50} src={resource.img} alt={resource.title} className="w-[50px] h-[50px] rounded-full" priority={true} />
               </li>
             </ul>
           </a>
