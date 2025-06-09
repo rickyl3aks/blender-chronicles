@@ -47,7 +47,7 @@
       "id": 6,
       "title": "Emil",
       "src": "/images/render/projects/emil.png",
-      "description": "This is Emil, my first attempt at sculpting. It’s inspired by one of my favourite games, /Nier: Automata/. While it’s not an exact replica, I hope to create more pieces like this in the future",
+      "description": "This is Emil, my first attempt at sculpting. It’s inspired by one of my favourite games, Nier: Automata. While it’s not an exact replica, I hope to create more pieces like this in the future",
       "render": "emil",
       "date": 1717977600000,
       "link": "https://www.square-enix-games.com/en_EU/games/nier-automata"
@@ -75,6 +75,22 @@
       "description": "This is my first 3D doughnut render, and I couldn’t go wrong following the Blender Guru tutorial. For anyone starting to learn Blender, following this tutorial is pretty much mandatory, it covers all the basics like modeling, texturing, and lighting to help you create realistic renders step by step",
       "render": "doughnut",
       "date": 1713523200000
+    },
+    {
+      "id": 10,
+      "title": "Coffee Cup wireframe",
+      "src": "/images/render/wireframe/coffee-cup.png",
+      "description": "This is a coffee cup wireframe created during the mesh course on CG Cookie, which helped me understand various shapes, mesh structure, and the purpose of quads and triangles in 3D modeling",
+      "render": "coffee-cup-wireframe",
+      "date": 1725753600000
+    },
+    {
+      "id": 11,
+      "title": "Blender wireframe",
+      "src": "/images/render/wireframe/blender.png",
+      "description": "This is a wireframe model created in Blender. Recreating this object helped me deepen my understanding of modeling. It’s part of a larger kitchen project that I’ll be updating here soon",
+      "render": "blender-wireframe",
+      "date": 1730505600000
     }
   ]
 }
