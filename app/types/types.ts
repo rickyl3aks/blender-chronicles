@@ -27,6 +27,13 @@ export interface Resource {
   image: string;
   alt: string;
 }
+
+export interface GalleryItem {
+  id: string | number;
+  src: string;
+  alt: string;
+  category: string;
+}
 export interface LightboxProps {
   src: string;
   alt?: string;
