@@ -11,7 +11,7 @@ const Preview = async () => {
           <a
             key={items.title}
             href={items.href}
-            className="block my-8 p-4 rounded text-white bg-[#392d35] shadow-md hover:bg-[#5a3f58] transition-colors duration-300 hover:shadow-lg cursor-pointer"
+            className="rounded-xl block my-8 p-4 text-white bg-[#392d35] shadow-md hover:bg-[#5a3f58] transition-colors duration-300 hover:shadow-lg cursor-pointer"
           >
             <h2 className="mb-2 font-title text-[#C6A4B6] font-bold">{items.title}</h2>
             <p>{items.description}</p>

@@ -18,10 +18,10 @@ const Resources = () => {
             href={resource.url}
             target="_blank"
             rel="noopener"
-            className="block my-8 rounded bg-[#392d35] shadow-md hover:bg-[#5a3f58] transition-colors duration-300 hover:shadow-lg"
+            className="block my-8 bg-[#392d35] shadow-md hover:bg-[#5a3f58] transition-colors duration-300 hover:shadow-lg rounded-xl" // Added rounded-xl here too
           >
-            <ul className="cursor-pointer list-none">
-              <li className="flex items-center justify-between gap-4 p-4 rounded-lg bg-black/5 dark:bg-white/5">
+            <ul className="cursor-pointer list-none overflow-hidden rounded-xl">
+              <li className="flex items-center justify-between gap-4 p-4 rounded-xl bg-black/10 dark:bg-white/10">
                 <div className="flex flex-col flex-1">
                   <div className="flex items-center flex-wrap gap-2">
                     {resource.tags.map((tag) => (
