@@ -7,8 +7,8 @@ const resourcesInfo: ResourcesData[] = resourceData.resource;
 const Resources = () => {
   return (
     <section className="p-8 mx-auto">
-      <h2 className="font-title text-[#2a2a2a] max-sm:text-4xl text-5xl font-bold mb-6">Resources</h2>
-      <p className="text-gray-500 mb-10">
+      <h2 className="font-title text-[#2a2a2a] max-sm:text-4xl text-3xl font-bold mb-6">Resources</h2>
+      <p className="text-lg text-gray-500 mb-10">
         This section presents the core tools, courses, and communities that have fueled my growth as a designer and 3D artist
       </p>
       {resourcesInfo.map((resource) => {
@@ -18,10 +18,10 @@ const Resources = () => {
             href={resource.url}
             target="_blank"
             rel="noopener"
-            className="block my-8 bg-[#392d35] shadow-md hover:bg-[#5a3f58] transition-colors duration-300 hover:shadow-lg rounded-xl" // Added rounded-xl here too
+            className="block my-8 bg-[#392d35] shadow-md hover:bg-[#5a3f58] transition-colors duration-300 hover:shadow-lg rounded-xl"
           >
-            <ul className="cursor-pointer list-none overflow-hidden rounded-xl">
-              <li className="flex items-center justify-between gap-4 p-4 rounded-xl bg-black/10 dark:bg-white/10">
+            <ul className="rounded-2xl block my-10 p-6 text-white bg-[#392d35] shadow-xl hover:bg-[#5a3f58] transition-colors duration-300 hover:shadow-2xl cursor-pointer text-lg">
+              <li className="flex items-center justify-between">
                 <div className="flex flex-col flex-1">
                   <div className="flex items-center flex-wrap gap-2">
                     {resource.tags.map((tag) => (

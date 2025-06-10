@@ -43,7 +43,7 @@ const Navbar = () => {
                           href={item.href}
                           className={classNames(
                             isActive ? "text-white bg-[#5a3f58]/90 backdrop-blur-sm" : "text-[#7a6a5a] hover:bg-[#a18695]/60 hover:text-white",
-                            "rounded-md px-3 py-2 text-[1.5rem] font-medium transition-all duration-200"
+                            "rounded-md px-3 py-2 text-xl font-medium transition-all duration-200"
                           )}
                           aria-current={isActive ? "page" : undefined}
                         >

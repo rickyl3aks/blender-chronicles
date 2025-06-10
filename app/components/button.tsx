@@ -10,7 +10,7 @@ export const Button = ({ children, variant = "primary", className = "", icon, ..
   const baseClasses =
     "cursor-pointer px-5 py-2.5 rounded-lg font-bold text-center transition-all duration-300 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#5a3f58] focus:ring-opacity-50 inline-flex items-center justify-center";
 
-  const combinedClasses = `${baseClasses} ${variants[variant]} ${className}`;
+  const combinedClasses = `${baseClasses} ${variants[variant]} ${className} text-xl font-medium`;
 
   if ("href" in props) {
     const { href } = props;
