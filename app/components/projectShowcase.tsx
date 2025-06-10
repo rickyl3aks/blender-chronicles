@@ -40,6 +40,7 @@ const ProjectShowcase = ({ items }: ProjectProps) => {
                   loop
                   muted
                   preload="metadata"
+                  playsInline
                 >
                   <source src={item.src} type="video/mp4" />
                   Your browser does not support the video tag.

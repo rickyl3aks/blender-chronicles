@@ -10,7 +10,7 @@ const Home = () => {
       <section className="text-center mt-10 p-6">
         <h2 className="max-sm:text-4xl text-3xl font-title text-[#2a2a2a] m-5 font-extrabold">Latest Render</h2>
         {sortedProjects[0].src.endsWith(".mp4") ? (
-          <video width={800} height={400} className="m-auto border-5 rounded-xl" autoPlay loop muted preload="metadata">
+          <video width={800} height={400} playsInline className="m-auto border-5 rounded-xl" autoPlay loop muted preload="metadata">
             <source src={`${sortedProjects[0].src}`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

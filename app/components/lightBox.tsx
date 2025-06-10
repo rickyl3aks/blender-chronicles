@@ -38,7 +38,15 @@ const Lightbox = ({ src, title, description, date, gallery = false, onClose }: L
     >
       <div className="bg-[#392d35] rounded-lg max-w-[90vw] max-h-[90vh] overflow-auto p-6 shadow-lg text-white">
         {src.endsWith(".mp4") ? (
-          <video src={src} autoPlay loop controls className="w-full sm:max-w-4xl h-auto max-h-[80vh] rounded" onClick={(e) => e.stopPropagation()} />
+          <video
+            src={src}
+            autoPlay
+            loop
+            controls
+            className="w-full sm:max-w-4xl h-auto max-h-[80vh] rounded"
+            onClick={(e) => e.stopPropagation()}
+            playsInline
+          />
         ) : (
           <Image
             width={800}
