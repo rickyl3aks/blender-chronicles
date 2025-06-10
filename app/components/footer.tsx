@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <FooterCopyright
       by={`${currentYear} Riccardo Consolandi | All Rights Reserved`}
-      className="text-center bg-gray-800 text-white py-4"
+      className="backdrop-blur-md text-center !text-[#7a6a5a] font-bold py-4"
     ></FooterCopyright>
   );
 };

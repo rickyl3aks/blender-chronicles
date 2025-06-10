@@ -6,6 +6,7 @@ import categoriesData from "../data/categories.json";
 import galleryData from "../data/galleryItems.json";
 import { Category, GalleryItem } from "../types/types";
 import Lightbox from "./lightBox";
+import Button from "./button";
 
 const categories: Category[] = categoriesData.categories;
 const galleryItems: GalleryItem[] = galleryData.galleryItems;
@@ -20,16 +21,14 @@ const GalleryFilter = () => {
     <section id="gallery">
       <div className="flex flex-wrap gap-3 mb-6">
         {categories.map((cat) => (
-          <button
+          <Button
             key={cat.value}
             onClick={() => setFilter(cat.value)}
-            className={`cursor-pointer px-4 py-2 rounded transition-colors ${
-              filter === cat.value ? "bg-[#5a3f58] text-white" : "bg-[#C6A4B6] hover:bg-[#a18695]"
-            }`}
-            type="button"
+            variant={filter === cat.value ? "accent" : "primary"}
+            aria-pressed={filter === cat.value}
           >
             {cat.label}
-          </button>
+          </Button>
         ))}
       </div>
 

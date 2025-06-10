@@ -53,3 +53,26 @@ export interface ProjectItem {
 export interface ProjectProps {
   items: ProjectItem[];
 }
+
+// button types
+
+export type Variant = "primary" | "accent";
+
+export type ButtonProps = ButtonAsButtonProps | ButtonAsAnchorProps;
+
+interface BaseButtonProps {
+  children: React.ReactNode;
+  icon?: React.ReactNode;
+  variant?: Variant;
+  className?: string;
+}
+
+interface ButtonAsButtonProps extends BaseButtonProps, Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, keyof BaseButtonProps> {
+  as?: "button";
+  href?: never;
+}
+
+interface ButtonAsAnchorProps extends BaseButtonProps, Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, keyof BaseButtonProps> {
+  as?: "a";
+  href: string;
+}

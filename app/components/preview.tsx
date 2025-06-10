@@ -15,7 +15,9 @@ const Preview = async () => {
           >
             <h2 className="mb-2 font-title text-[#C6A4B6] font-bold">{items.title}</h2>
             <p>{items.description}</p>
-            <span className="text-[var(--accent)] no-underline font-bold hover:underline">{items.label}</span>
+            <span className="text-[#E8C4C4] no-underline font-bold hover:underline hover:text-[#F5D6D6] transition-colors duration-200">
+              {items.label}
+            </span>
           </a>
         );
       })}

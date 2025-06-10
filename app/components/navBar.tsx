@@ -23,14 +23,14 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <Disclosure as="nav" className="bg-gray-800 fixed z-10 w-full">
+    <Disclosure as="nav" className="backdrop-blur-md fixed z-10 w-full shadow-2xl">
       {({ open }) => (
         <>
           <nav>
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex h-20 items-center justify-between">
                 <Link href="/">
-                  <Image width={100} height={100} className="h-15 w-auto drop-shadow-md" src="/images/logo/logo.png" alt="logo" priority={true} />
+                  <Image width={100} height={100} className="h-15 w-auto" src="/images/logo/logo.png" alt="logo" priority={true} />
                 </Link>
 
                 <div className="hidden mobile:block">
@@ -42,8 +42,8 @@ const Navbar = () => {
                           key={item.name}
                           href={item.href}
                           className={classNames(
-                            isActive ? "text-[var(--accent)]" : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                            "rounded-md px-3 py-2 text-[1.5rem] font-medium"
+                            isActive ? "text-white bg-[#5a3f58]/90 backdrop-blur-sm" : "text-[#7a6a5a] hover:bg-[#a18695]/60 hover:text-white",
+                            "rounded-md px-3 py-2 text-[1.5rem] font-medium transition-all duration-200"
                           )}
                           aria-current={isActive ? "page" : undefined}
                         >
@@ -72,8 +72,8 @@ const Navbar = () => {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    pathname === item.href ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
+                    pathname === item.href ? "text-white bg-[#5a3f58]/90 backdrop-blur-sm" : "text-[#7a6a5a] hover:bg-[#a18695]/60 hover:text-white",
+                    "block rounded-md px-3 py-2 text-base font-medium transition-all duration-200"
                   )}
                   aria-current={pathname === item.href ? "page" : undefined}
                 >

@@ -7,7 +7,7 @@ const resourcesInfo: ResourcesData[] = resourceData.resource;
 const Resources = () => {
   return (
     <section className="p-8 mx-auto">
-      <h2 className="font-title text-[var(--accent)] max-sm:text-4xl text-5xl font-bold mb-6">Resources</h2>
+      <h2 className="font-title text-[#2a2a2a] max-sm:text-4xl text-5xl font-bold mb-6">Resources</h2>
       <p className="text-gray-500 mb-10">
         This section presents the core tools, courses, and communities that have fueled my growth as a designer and 3D artist
       </p>
