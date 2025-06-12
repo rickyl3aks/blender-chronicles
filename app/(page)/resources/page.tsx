@@ -1,16 +1,17 @@
 import Image from "next/image";
-import resourceData from "../content/resourceData.json";
-import { ResourcesData } from "../types/types";
+import resourceData from "@/app/content/resourceData.json";
+import { ResourcesData } from "@/app/types/types";
+import { Title } from "@/app/components/atom/title";
+import { SubTitle } from "@/app/components/atom/subTitle";
+import { Content } from "@/app/components/atom/content";
 
 const resourcesInfo: ResourcesData[] = resourceData.resource;
 
 const Resources = () => {
   return (
     <section className="p-8 mx-auto">
-      <h2 className="font-title text-[#2a2a2a] max-sm:text-4xl text-3xl font-bold mb-6">Resources</h2>
-      <p className="text-lg text-gray-500 mb-10">
-        This section presents the core tools, courses, and communities that have fueled my growth as a designer and 3D artist
-      </p>
+      <Title title="Resources" />
+      <SubTitle subT="This section presents the core tools, courses, and communities that have fueled my growth as a designer and 3D artist" />
       {resourcesInfo.map((resource) => {
         return (
           <a
@@ -31,7 +32,7 @@ const Resources = () => {
                     ))}
                     <span className="font-title text-[#C6A4B6] font-bold no-underline">{resource.title}</span>
                   </div>
-                  <p className="max-[900px]:text-[1.3rem] text-white mt-1">{resource.description}</p>
+                  <Content>{resource.description}</Content>
                 </div>
                 <Image width={50} height={50} src={resource.img} alt={resource.title} className="w-[50px] h-[50px] rounded-full" priority={true} />
               </li>

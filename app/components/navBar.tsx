@@ -28,9 +28,9 @@ const Navbar = () => {
         <>
           <nav>
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex h-20 items-center justify-between">
+              <div className="flex h-16 items-center justify-between">
                 <Link href="/">
-                  <Image width={100} height={100} className="h-15 w-auto" src="/images/logo/logo.png" alt="logo" priority={true} />
+                  <Image width={50} height={50} className="h-10 w-auto" src="/images/logo/logo.png" alt="logo" priority={true} />
                 </Link>
 
                 <div className="hidden mobile:block">
