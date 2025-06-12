@@ -1,4 +1,4 @@
-import { SubTitle } from "@/app/components/atoms/subTitle";
+import { Caption } from "@/app/components/atoms/caption";
 import { Title } from "@/app/components/atoms/title";
 import GalleryFilter from "@/app/components/molecules/galleryFilter";
 
@@ -6,7 +6,7 @@ const Gallery = async () => {
   return (
     <section id="gallery" className="p-6">
       <Title title="Gallery" />
-      <SubTitle subT="A showcase of creative works" />
+      <Caption text="A showcase of creative works" />
       <GalleryFilter />
     </section>
   );

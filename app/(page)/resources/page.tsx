@@ -2,7 +2,7 @@ import Image from "next/image";
 import resourceData from "@/app/content/resourceData.json";
 import { ResourcesData } from "@/app/types/types";
 import { Title } from "@/app/components/atoms/title";
-import { SubTitle } from "@/app/components/atoms/subTitle";
+import { Caption } from "@/app/components/atoms/caption";
 import { Content } from "@/app/components/atoms/content";
 
 const resourcesInfo: ResourcesData[] = resourceData.resource;
@@ -11,7 +11,7 @@ const Resources = () => {
   return (
     <section className="p-8 mx-auto">
       <Title title="Resources" />
-      <SubTitle subT="This section presents the core tools, courses, and communities that have fueled my growth as a designer and 3D artist" />
+      <Caption text="This section presents the core tools, courses, and communities that have fueled my growth as a designer and 3D artist" />
       {resourcesInfo.map((resource) => {
         return (
           <a
