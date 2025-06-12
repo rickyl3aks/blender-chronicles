@@ -1,6 +1,6 @@
-import { SubTitle } from "@/app/components/atom/subTitle";
-import { Title } from "@/app/components/atom/title";
-import GalleryFilter from "@/app/components/galleryFilter";
+import { SubTitle } from "@/app/components/atoms/subTitle";
+import { Title } from "@/app/components/atoms/title";
+import GalleryFilter from "@/app/components/molecules/galleryFilter";
 
 const Gallery = async () => {
   return (

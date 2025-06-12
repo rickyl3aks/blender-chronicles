@@ -1,9 +1,9 @@
 import Image from "next/image";
 import resourceData from "@/app/content/resourceData.json";
 import { ResourcesData } from "@/app/types/types";
-import { Title } from "@/app/components/atom/title";
-import { SubTitle } from "@/app/components/atom/subTitle";
-import { Content } from "@/app/components/atom/content";
+import { Title } from "@/app/components/atoms/title";
+import { SubTitle } from "@/app/components/atoms/subTitle";
+import { Content } from "@/app/components/atoms/content";
 
 const resourcesInfo: ResourcesData[] = resourceData.resource;
 

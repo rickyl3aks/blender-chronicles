@@ -1,5 +1,5 @@
-import { Content } from "@/app/components/atom/content";
-import { Title } from "@/app/components/atom/title";
+import { Content } from "@/app/components/atoms/content";
+import { Title } from "@/app/components/atoms/title";
 
 const About = () => {
   return (

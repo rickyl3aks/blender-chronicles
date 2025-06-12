@@ -1,8 +1,8 @@
 import React from "react";
-import { Items } from "../types/types";
+import { Items } from "../../types/types";
 
 const Preview = async () => {
-  const { previewData } = await import("../content/previewData.json");
+  const { previewData } = await import("../../content/previewData.json");
 
   return (
     <section className="m-12">

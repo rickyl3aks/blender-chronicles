@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Manrope } from "next/font/google";
-import Navbar from "./components/navBar";
-import Footer from "./components/footer";
+import Navbar from "./components/organisms/navBar";
+import Footer from "./components/organisms/footer";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {

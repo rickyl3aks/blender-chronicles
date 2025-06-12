@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import categoriesData from "../data/categories.json";
-import galleryData from "../data/galleryItems.json";
-import { Category, GalleryItem } from "../types/types";
-import Lightbox from "./lightBox";
-import Button from "./button";
+import categoriesData from "../../data/categories.json";
+import galleryData from "../../data/galleryItems.json";
+import { Category, GalleryItem } from "../../types/types";
+import Lightbox from "../organisms/lightBox";
+import Button from "../atoms/button";
 
 const categories: Category[] = categoriesData.categories;
 const galleryItems: GalleryItem[] = galleryData.galleryItems;

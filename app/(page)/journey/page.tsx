@@ -1,6 +1,6 @@
-import { SubTitle } from "@/app/components/atom/subTitle";
-import { Title } from "@/app/components/atom/title";
-import ProjectShowcase from "@/app/components/projectShowcase";
+import { SubTitle } from "@/app/components/atoms/subTitle";
+import { Title } from "@/app/components/atoms/title";
+import ProjectShowcase from "@/app/components/organisms/projectShowcase";
 import projectData from "@/app/data/projects.json";
 
 export const sortedProjects = [...projectData.projectItems].sort((a, b) => b.date - a.date);

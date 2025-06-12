@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import Lightbox from "./lightBox";
-import { ProjectProps } from "../types/types";
-import { formatDate } from "../functions/formatDate";
+import { ProjectProps } from "../../types/types";
+import { formatDate } from "../../functions/formatDate";
 
 const ITEMS_PER_PAGE = 8;
 

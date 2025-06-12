@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { formatDate } from "../functions/formatDate";
+import { formatDate } from "../../functions/formatDate";
 
 type LightboxProps = {
   src: string;

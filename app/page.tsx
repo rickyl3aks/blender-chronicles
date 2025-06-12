@@ -1,9 +1,9 @@
-import HeroPage from "./components/heroPage";
-import Preview from "./components/preview";
+import HeroPage from "./components/organisms/heroPage";
+import Preview from "./components/molecules/preview";
 import Image from "next/image";
-import Button from "./components/button";
 import { sortedProjects } from "./(page)/journey/page";
-import { Title } from "./components/atom/title";
+import { Title } from "./components/atoms/title";
+import Button from "./components/atoms/button";
 
 const Home = () => {
   return (

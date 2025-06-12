@@ -1,5 +1,5 @@
-import { SubTitle } from "./atom/subTitle";
-import { Title } from "./atom/title";
+import { SubTitle } from "../atoms/subTitle";
+import { Title } from "../atoms/title";
 
 const HeroPage = () => {
   return (
