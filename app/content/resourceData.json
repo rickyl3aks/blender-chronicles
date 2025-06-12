@@ -62,6 +62,15 @@
       "description": "No sign-up, CC0 license – super useful for renders",
       "img": "https://placehold.co/50x50?text=PH",
       "alt": "Poly Haven"
+    },
+    {
+      "id": 8,
+      "title": "Turbo Squid",
+      "url": "https://www.turbosquid.com/",
+      "tags": ["Resource", "3DModels"],
+      "description": "Marketplace for high-quality 3D assets – great for scenes and props",
+      "img": "https://placehold.co/50x50?text=TS",
+      "alt": "Turbo Squid"
     }
   ]
 }

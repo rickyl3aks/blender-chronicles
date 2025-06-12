@@ -99,6 +99,14 @@
       "description": "Created during a CG Cookie course on rigid body physics, this Galton board was a fun project to explore. I especially enjoyed the texturing process and was really pleased with how the final result turned out",
       "render": "galton-board",
       "date": 1745712000000
+    },
+    {
+      "id": 13,
+      "title": "Cat",
+      "src": "/images/render/projects/cat.png",
+      "description": "I created this glowing-eyed cat in Blender while learning how to rig and move objects using bone structures super fun to bring it to life! The tree in the scene is from TurboSquid",
+      "render": "glowing-cat-at-night",
+      "date": 1749732233200
     }
   ]
 }
