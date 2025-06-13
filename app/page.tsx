@@ -6,37 +6,35 @@ import { Title } from "./components/atoms/title";
 import Button from "./components/atoms/button";
 
 const Home = () => {
+  const latest = sortedProjects[0];
+  const isVideo = latest.src.endsWith(".mp4");
+
   return (
-    <div>
+    <>
       <section className="text-center mt-10 p-6">
         <Title title="Latest Render" />
-        {sortedProjects[0].src.endsWith(".mp4") ? (
+        {isVideo ? (
           <video width={800} height={400} playsInline className="m-auto border-5 rounded-xl" autoPlay loop muted preload="metadata">
-            <source src={`${sortedProjects[0].src}`} type="video/mp4" />
+            <source src={latest.src} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         ) : (
-          <Image
-            width={800}
-            height={400}
-            src={`${sortedProjects[0].src}`}
-            className="m-auto border-5 rounded-xl"
-            alt="Latest Render"
-            priority={true}
-          />
+          <Image width={800} height={400} src={latest.src} className="m-auto border-5 rounded-xl" alt="Latest Render" priority />
         )}
         <div className="mt-8">
-          <div className="mt-8">
-            <Button href="/journey" icon="→">
-              Read the Journey
-            </Button>
-          </div>
+          <Button href="/journey" icon="→">
+            Read the Journey
+          </Button>
         </div>
         <div className="my-10 h-px bg-gradient-to-r from-transparent via-[#392d35] to-transparent" />
       </section>
+
       <HeroPage />
-      <Preview />
-    </div>
+
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 m-12">
+        <Preview />
+      </section>
+    </>
   );
 };
 

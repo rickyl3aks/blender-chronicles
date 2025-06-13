@@ -8,7 +8,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "placehold.co",
         pathname: "/**",
-      },
+      }
     ],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",

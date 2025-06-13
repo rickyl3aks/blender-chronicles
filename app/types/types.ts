@@ -18,6 +18,7 @@ export interface Items {
   description: string;
   label: string;
   href: string;
+  img?: string;
 }
 
 export interface Resource {
@@ -34,6 +35,7 @@ export interface GalleryItem {
   src: string;
   alt: string;
   category: string;
+  featured: boolean;
 }
 export interface LightboxProps {
   src: string;

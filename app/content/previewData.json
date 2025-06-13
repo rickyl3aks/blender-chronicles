@@ -4,7 +4,8 @@
       "title": "📝 Journey",
       "description": "See how I learn step by step, week by week. I share experiments, thoughts, and progress",
       "label": "Read the Journey →",
-      "href": "journey"
+      "href": "journey",
+      "img": "https://placehold.co/800x400/c7c7c7/ffffff?text=%20Journey&font=Oswald&font-weight=700&font-size=48px"
     },
     {
       "title": "🖼️ Gallery",
@@ -16,7 +17,8 @@
       "title": "🔗 Resources",
       "description": "Links to tutorials, courses, and tools that helped me — from CG Cookie to YouTube gems",
       "label": "View Resources →",
-      "href": "resources"
+      "href": "resources",
+      "img": "https://placehold.co/800x400/c7c7c7/ffffff?text=%20Resources&font=Oswald&font-weight=700&font-size=48px"
     }
   ]
 }

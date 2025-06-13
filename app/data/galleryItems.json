@@ -1,8 +1,8 @@
 {
   "galleryItems": [
-    { "id": 1, "src": "/images/render/lowPoly/giraffe.png", "alt": "Giraffe", "category": "lowpoly" },
-    { "id": 2, "src": "https://placehold.co/300x190?text=Coming+Soon", "alt": "Stylized 1", "category": "stylized" },
-    { "id": 3, "src": "/images/render/motion/domino.mp4", "alt": "domino", "category": "motion" },
-    { "id": 4, "src": "/images/render/realism/tea-pot.png", "alt": "tea-pot", "category": "realism" }
+    { "id": 1, "src": "/images/render/lowPoly/giraffe.png", "alt": "Giraffe", "category": "lowpoly", "featured": false },
+    { "id": 2, "src": "https://placehold.co/300x190?text=Coming+Soon", "alt": "Stylized 1", "category": "stylized", "featured": false },
+    { "id": 3, "src": "/images/render/motion/domino.mp4", "alt": "domino", "category": "motion", "featured": true },
+    { "id": 4, "src": "/images/render/realism/tea-pot.png", "alt": "tea-pot", "category": "realism", "featured": false }
   ]
 }
