@@ -107,6 +107,14 @@
       "description": "I created this glowing-eyed cat in Blender while learning how to rig and move objects using bone structures super fun to bring it to life! The tree in the scene is from TurboSquid",
       "render": "glowing-cat-at-night",
       "date": 1749732233200
+    },
+    {
+      "id": 14,
+      "title": "Ocean",
+      "src": "/images/render/projects/ocean.mp4",
+      "description": "A stylized cartoon ocean created in Blender using mainly shading nodes and rendered in Eevee. A simple project, but a fun experiment in non-photorealistic rendering",
+      "render": "catoonish ocean",
+      "date": 1749818413874
     }
   ]
 }
