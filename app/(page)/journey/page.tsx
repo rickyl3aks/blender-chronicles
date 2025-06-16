@@ -1,9 +1,7 @@
 import { Caption } from "@/app/components/atoms/caption";
 import { Title } from "@/app/components/atoms/title";
 import ProjectShowcase from "@/app/components/organisms/projectShowcase";
-import projectData from "@/app/data/projects.json";
-
-export const sortedProjects = [...projectData.projectItems].sort((a, b) => b.date - a.date);
+import { sortedProjects } from "@/app/functions/sortedProject";
 
 const Journey = () => {
   return (
