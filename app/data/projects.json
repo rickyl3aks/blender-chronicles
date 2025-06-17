@@ -37,14 +37,6 @@
     },
     {
       "id": 5,
-      "title": "Tea Pot",
-      "src": "/images/render/realism/tea-pot.png",
-      "description": "This teapot marks my first try at using geometry, which has significantly helped me enhance my skills by teaching me how shapes, proportions, and details come together to create a cohesive and realistic 3D model. It was a valuable learning experience that laid the foundation for future projects",
-      "render": "tea-pot",
-      "date": 1724889600000
-    },
-    {
-      "id": 6,
       "title": "Emil",
       "src": "/images/render/projects/emil.png",
       "description": "This is Emil, my first attempt at sculpting. It’s inspired by one of my favourite games, Nier: Automata. While it’s not an exact replica, I hope to create more pieces like this in the future",
@@ -53,7 +45,7 @@
       "link": "https://www.square-enix-games.com/en_EU/games/nier-automata"
     },
     {
-      "id": 7,
+      "id": 6,
       "title": "Rabbit",
       "src": "/images/render/projects/rabbit.png",
       "description": "This is a low-poly rabbit model that I created to practice my skills in 3D modeling and texturing. The focus was on creating a simple yet appealing design that captures the essence of a rabbit without going into too much detail, I've used a gradient for shading to make it look more appealing and give it the look of a more polished model",
@@ -61,7 +53,7 @@
       "date": 1747484360000
     },
     {
-      "id": 8,
+      "id": 7,
       "title": "Blender Logo",
       "src": "/images/render/projects/blender-logo.mp4",
       "description": "This is a simple animation of the Blender logo, created to practice my skills in animation and rendering. The focus was on creating a smooth and visually appealing animation that showcases the Blender logo in a dynamic way",
@@ -69,7 +61,7 @@
       "date": 1748380800000
     },
     {
-      "id": 9,
+      "id": 8,
       "title": "Doughnut",
       "src": "/images/render/projects/doughnut.mp4",
       "description": "This is my first 3D doughnut render, and I couldn’t go wrong following the Blender Guru tutorial. For anyone starting to learn Blender, following this tutorial is pretty much mandatory, it covers all the basics like modeling, texturing, and lighting to help you create realistic renders step by step",
@@ -77,7 +69,7 @@
       "date": 1713523200000
     },
     {
-      "id": 10,
+      "id": 9,
       "title": "Coffee Cup wireframe",
       "src": "/images/render/wireframe/coffee-cup.png",
       "description": "This is a coffee cup wireframe created during the mesh course on CG Cookie, which helped me understand various shapes, mesh structure, and the purpose of quads and triangles in 3D modeling",
@@ -85,7 +77,7 @@
       "date": 1725753600000
     },
     {
-      "id": 11,
+      "id": 10,
       "title": "Blender wireframe",
       "src": "/images/render/wireframe/blender.png",
       "description": "This is a wireframe model created in Blender. Recreating this object helped me deepen my understanding of modeling. It’s part of a larger kitchen project that I’ll be updating here soon",
@@ -93,7 +85,7 @@
       "date": 1730505600000
     },
     {
-      "id": 12,
+      "id": 11,
       "title": "Galton board",
       "src": "/images/render/projects/galton-board.mp4",
       "description": "Created during a CG Cookie course on rigid body physics, this Galton board was a fun project to explore. I especially enjoyed the texturing process and was really pleased with how the final result turned out",
@@ -101,7 +93,7 @@
       "date": 1745712000000
     },
     {
-      "id": 13,
+      "id": 12,
       "title": "Cat",
       "src": "/images/render/projects/cat.png",
       "description": "I created this glowing-eyed cat in Blender while learning how to rig and move objects using bone structures super fun to bring it to life! The tree in the scene is from TurboSquid",
@@ -109,12 +101,20 @@
       "date": 1749732233200
     },
     {
-      "id": 14,
+      "id": 13,
       "title": "Ocean",
       "src": "/images/render/projects/ocean.mp4",
       "description": "A stylized cartoon ocean created in Blender using mainly shading nodes and rendered in Eevee. A simple project, but a fun experiment in non-photorealistic rendering",
       "render": "catoonish ocean",
       "date": 1749818413874
+    },
+    {
+      "id": 14,
+      "title": "Castle",
+      "src": "/images/render/projects/castle.png",
+      "description": "Low-poly castle scene created as part of a GameDev course. I modeled the walls, tower, and trees, then used shader nodes to apply stylized colors and built a simple sky using a color ramp. Rendered in Eevee",
+      "render": "castle",
+      "date": 1748818800000
     }
   ]
 }
