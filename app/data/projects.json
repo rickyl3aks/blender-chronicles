@@ -115,6 +115,14 @@
       "description": "Low-poly castle scene created as part of a GameDev course. I modeled the walls, tower, and trees, then used shader nodes to apply stylized colors and built a simple sky using a color ramp. Rendered in Eevee",
       "render": "castle",
       "date": 1748818800000
+    },
+    {
+      "id": 15,
+      "title": "Spookie Corridor",
+      "src": "/images/render/projects/spookie-corridor.mp4",
+      "description": "I made this spooky corridor mostly by working with textures, learning how to UV unwrap and mark seams along the way. To make it creepier, I added a little animation at the end where a door slowly opens. The lights in the scene use emission nodes to create that glow",
+      "render": "spookie-corridor",
+      "date": 1750282775303
     }
   ]
 }
