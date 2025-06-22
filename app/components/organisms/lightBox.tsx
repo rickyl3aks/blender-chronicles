@@ -59,7 +59,7 @@ const Lightbox = ({ src, title, description, date, gallery = false, onClose }: L
           />
         )}
 
-        {gallery && <p className="italic">{title}</p>}
+        {gallery && <p className="italic text-sm">{title}</p>}
 
         {date && (
           <div className="mt-4 max-w-[800px] ">
