@@ -11,7 +11,14 @@ type LightboxProps = {
   onClose: () => void;
 };
 
-const Lightbox = ({ src, title, description, date, gallery = false, onClose }: LightboxProps) => {
+const Lightbox = ({
+  src,
+  title,
+  description,
+  date,
+  //gallery = false,
+  onClose,
+}: LightboxProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -36,35 +43,19 @@ const Lightbox = ({ src, title, description, date, gallery = false, onClose }: L
       onClick={handleClickOutside}
       className="fixed inset-0 flex justify-center items-center bg-opacity-70 backdrop-blur-sm z-50 p-4"
     >
-      <div className="bg-[#392d35] rounded-lg max-w-[90vw] max-h-[90vh] overflow-auto p-6 shadow-lg text-white">
+      <div className="bg-[#392d35] rounded-lg max-w-[90vw] max-h-[90vh] overflow-auto p-4 shadow-lg text-white">
         {src.endsWith(".mp4") ? (
-          <video
-            src={src}
-            autoPlay
-            loop
-            controls
-            className="w-full sm:max-w-4xl h-auto max-h-[80vh] rounded"
-            onClick={(e) => e.stopPropagation()}
-            playsInline
-          />
+          <video src={src} autoPlay loop controls onClick={(e) => e.stopPropagation()} playsInline />
         ) : (
-          <Image
-            width={800}
-            height={600}
-            style={{ width: "auto", height: "auto" }}
-            src={src}
-            alt={title || ""}
-            className="max-w-full max-h-[60vh] mx-auto rounded-md"
-            priority={true}
-          />
+          <Image width={800} height={600} style={{ objectFit: "contain" }} src={src} alt={title || ""} priority={true} />
         )}
 
-        {gallery && <p className="italic text-sm">{title}</p>}
+        {/* {gallery && <p className="italic text-sm">{title}</p>} */}
 
         {date && (
           <div className="mt-4 max-w-[800px] ">
-            <h2 className="text-4xl max-sm:text-2xl font-bold font-title text-[#C6A4B6]">{title}</h2>
-            <p className="text-left mt-2 max-sm:text-sm">{description}</p>
+            <h2 className="text-2xl max-sm:text-2xl font-bold font-title text-[#C6A4B6]">{title}</h2>
+            <p className="text-left mt-2 text-base">{description}</p>
 
             <p className="text-left text-xs mt-1 italic text-gray-300">{formatDate(date)}</p>
           </div>
