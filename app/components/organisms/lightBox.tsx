@@ -11,14 +11,7 @@ type LightboxProps = {
   onClose: () => void;
 };
 
-const Lightbox = ({
-  src,
-  title,
-  description,
-  date,
-  //gallery = false,
-  onClose,
-}: LightboxProps) => {
+const Lightbox = ({ src, title, description, date, gallery = false, onClose }: LightboxProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -43,14 +36,14 @@ const Lightbox = ({
       onClick={handleClickOutside}
       className="fixed inset-0 flex justify-center items-center bg-opacity-70 backdrop-blur-sm z-50 p-4"
     >
-      <div className="bg-[#392d35] rounded-lg max-w-[90vw] max-h-[90vh] overflow-auto p-4 shadow-lg text-white">
+      <div className="relative bg-[#392d35] rounded-lg max-w-[90vw] max-h-[90vh] landscape:m-[10rem] overflow-auto p-4 pb-[3rem] shadow-lg text-white">
         {src.endsWith(".mp4") ? (
           <video src={src} autoPlay loop controls onClick={(e) => e.stopPropagation()} playsInline />
         ) : (
           <Image width={800} height={600} style={{ objectFit: "contain" }} src={src} alt={title || ""} priority={true} />
         )}
 
-        {/* {gallery && <p className="italic text-sm">{title}</p>} */}
+        {gallery && <p className="absolute bottom-2 italic text-sm">{title}</p>}
 
         {date && (
           <div className="mt-4 max-w-[800px] ">
@@ -60,13 +53,14 @@ const Lightbox = ({
             <p className="text-left text-xs mt-1 italic text-gray-300">{formatDate(date)}</p>
           </div>
         )}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-black bg-opacity-80 hover:bg-opacity-100 transition text-white text-3xl font-bold leading-none"
-        >
-          &times;
-        </button>
       </div>
+      <button
+        onClick={onClose}
+        title="Close"
+        className="absolute cursor-pointer top-1 right-1 w-10 h-10 shadow-lg rounded-full bg-black bg-opacity-80 hover:bg-opacity-100 transition text-white text-3xl font-bold leading-none"
+      >
+        &times;
+      </button>
     </div>
   );
 };
