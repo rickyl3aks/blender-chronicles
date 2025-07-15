@@ -123,6 +123,14 @@
       "description": "I created the bark texture using shader nodes, without relying on UV wrapping. Instead, I used the \"Object\" output from the Texture Coordinate node to map the texture. It was my first time sculpting a tree bark, and through the process, I learned how to use various sculpting tools to make organic forms look more realistic. The leaves were made using alpha textures",
       "render": "trees",
       "date": 1750335872264
+    },
+    {
+      "id": 16,
+      "title": "Pencil",
+      "src": "/images/render/projects/pencil.mp4",
+      "description": "In this CG Cookie course project, I created a dynamic animation of two pencils colliding and changing color. Through this, I explored Blender's node system to control shading and learned how to bring more life and realism to objects",
+      "render": "pencil",
+      "date": 1752558403767
     }
   ]
 }
