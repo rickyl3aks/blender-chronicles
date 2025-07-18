@@ -131,6 +131,14 @@
       "description": "In this CG Cookie course project, I created a dynamic animation of two pencils colliding and changing color. Through this, I explored Blender's node system to control shading and learned how to bring more life and realism to objects",
       "render": "pencil",
       "date": 1752558403767
+    },
+    {
+      "id": 17,
+      "title": "Beetle",
+      "src": "/images/render/projects/beetle.png",
+      "description": "This high-poly beetle model was created as part of my practice following a CG Cookie course on 3D modeling and texturing. Using a gradient shader helped give the model a polished and stylized look. For the renders, I focused on composition—especially applying the rule of thirds—to achieve balanced and visually engaging shots",
+      "render": "beetle",
+      "date": 1752864244099
     }
   ]
 }
