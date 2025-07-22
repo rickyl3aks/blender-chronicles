@@ -139,6 +139,14 @@
       "description": "This high-poly beetle model was created as part of my practice following a CG Cookie course on 3D modeling and texturing. Using a gradient shader helped give the model a polished and stylized look. For the renders, I focused on composition—especially applying the rule of thirds—to achieve balanced and visually engaging shots",
       "render": "beetle",
       "date": 1752864244099
+    },
+    {
+      "id": 18,
+      "title": "Piano",
+      "src": "/images/render/projects/piano.mp4",
+      "description": "This piano was created as part of a CG Cookie course on 3D modeling and texturing. I focused on creating a realistic piano model, paying attention to details like the keys and the body. The project helped me understand how to use textures and materials effectively to achieve a polished look",
+      "render": "piano",
+      "date": 1753197631749
     }
   ]
 }
