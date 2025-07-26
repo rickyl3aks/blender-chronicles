@@ -147,6 +147,14 @@
       "description": "This piano was created as part of a CG Cookie course on 3D modeling and texturing. I focused on creating a realistic piano model, paying attention to details like the keys and the body. The project helped me understand how to use textures and materials effectively to achieve a polished look",
       "render": "piano",
       "date": 1753197631749
+    },
+    {
+      "id": 19,
+      "title": "Tambourine",
+      "src": "/images/render/projects/tambourine.mp4",
+      "description": "This tambourine model was developed during a CG Cookie course focused on 3D modeling and texturing. I aimed to achieve realism by carefully detailing elements such as the jingles and wooden frame. Through this project, I gained a deeper understanding of how to apply textures and materials to create a refined, polished result",
+      "render": "tambourine",
+      "date": 1753530916269
     }
   ]
 }
