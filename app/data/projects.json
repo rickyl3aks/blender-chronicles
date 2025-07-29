@@ -155,6 +155,14 @@
       "description": "This tambourine model was developed during a CG Cookie course focused on 3D modeling and texturing. I aimed to achieve realism by carefully detailing elements such as the jingles and wooden frame. Through this project, I gained a deeper understanding of how to apply textures and materials to create a refined, polished result",
       "render": "tambourine",
       "date": 1753530916269
+    },
+    {
+      "id": 20,
+      "title": "Stabilizer",
+      "src": "/images/render/projects/stabilizer.png",
+      "description": "A 3D render of the stabilizer from Death Stranding, modeled in Blender. I used the Boolean modifier to attach the UV sphere and focused on replicating the original design from the game.",
+      "render": "stabilizer",
+      "date": 1753818392429
     }
   ]
 }
