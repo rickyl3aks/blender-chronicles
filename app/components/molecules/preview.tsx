@@ -1,19 +1,40 @@
-import React from "react";
 import { GalleryItem, Items } from "../../types/types";
 import galleryItems from "../../data/galleryItems.json";
 import previewDataRaw from "../../content/previewData.json";
 import Image from "next/image";
+import { sortedProjects } from "@/app/functions/sortedProject";
 
 const Preview = () => {
   const { galleryItems: items } = galleryItems;
   const previewData = previewDataRaw.previewData as Items[];
 
   const featuredGalleryItem = items.find((item: GalleryItem) => item.featured);
+  const latest = sortedProjects[0];
+
+  const renderMedia = (src: string, alt: string) =>
+    src.endsWith(".mp4") ? (
+      <video width={800} height={400} playsInline autoPlay loop muted preload="metadata" className="w-full h-40 object-cover rounded-lg mb-6">
+        <source src={src} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    ) : (
+      <Image width={800} height={400} src={src} alt={alt} className="w-full h-40 object-cover rounded-lg mb-6" />
+    );
 
   return (
     <>
       {previewData.map((item: Items, index: number) => {
         const isGallery = item.title === "🖼️ Gallery";
+        const isJourney = item.title === "📝 Journey";
+
+        let media = null;
+        if (isGallery && featuredGalleryItem) {
+          media = renderMedia(featuredGalleryItem.src, featuredGalleryItem.alt);
+        } else if (isJourney && latest?.src) {
+          media = renderMedia(latest.src, `${latest.title || "Latest item"} preview`);
+        } else if (item.img) {
+          media = renderMedia(item.img, `${item.title} preview`);
+        }
 
         return (
           <a
@@ -32,42 +53,7 @@ const Preview = () => {
             <div className="flex flex-col h-full justify-between">
               <div>
                 <h2 className="mb-4 font-title text-[#C6A4B6] font-bold text-2xl">{item.title}</h2>
-
-                {isGallery && featuredGalleryItem ? (
-                  featuredGalleryItem.src.endsWith(".mp4") ? (
-                    <video
-                      width={800}
-                      height={400}
-                      playsInline
-                      className="w-full h-40 object-cover rounded-lg mb-6"
-                      autoPlay
-                      loop
-                      muted
-                      preload="metadata"
-                    >
-                      <source src={featuredGalleryItem.src} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  ) : (
-                    <Image
-                      width={800}
-                      height={400}
-                      src={featuredGalleryItem.src}
-                      alt={featuredGalleryItem.alt}
-                      className="w-full h-40 object-cover rounded-lg mb-6"
-                    />
-                  )
-                ) : (
-                  item.img && (
-                    <Image
-                      width={800}
-                      height={400}
-                      src={item.img}
-                      alt={`${item.title} preview`}
-                      className="w-full h-40 object-cover rounded-lg mb-6"
-                    />
-                  )
-                )}
+                {media}
               </div>
 
               <div>
