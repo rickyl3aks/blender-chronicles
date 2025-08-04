@@ -163,6 +163,14 @@
       "description": "A 3D render of the stabilizer from Death Stranding, modeled in Blender. I used the Boolean modifier to attach the UV sphere and focused on replicating the original design from the game.",
       "render": "stabilizer",
       "date": 1753818392429
+    },
+    {
+      "id": 21,
+      "title": "Knife",
+      "src": "/images/render/projects/knife.png",
+      "description": "This is a simple knife design created to practice my 3D modeling and texturing skills. I used different techniques for each component: the blade was textured using a basic UV wrap with an image texture, the handle was hand-painted, and the bolster was created by mixing various shader nodes",
+      "render": "knife",
+      "date": 1754331887573
     }
   ]
 }
