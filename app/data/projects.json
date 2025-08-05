@@ -171,6 +171,14 @@
       "description": "This is a simple knife design created to practice my 3D modeling and texturing skills. I used different techniques for each component: the blade was textured using a basic UV wrap with an image texture, the handle was hand-painted, and the bolster was created by mixing various shader nodes",
       "render": "knife",
       "date": 1754331887573
+    },
+    {
+      "id": 22,
+      "title": "Goggles",
+      "src": "/images/render/projects/goggles.png",
+      "description": "A sleek and futuristic concept for a pair of stylized goggles. The clean lines, reflective surfaces, and soft, natural shadows come together to create a photorealistic and compelling product shot",
+      "render": "goggles",
+      "date": 1754411936425
     }
   ]
 }
