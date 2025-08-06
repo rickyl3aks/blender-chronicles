@@ -179,6 +179,14 @@
       "description": "A sleek and futuristic concept for a pair of stylized goggles. The clean lines, reflective surfaces, and soft, natural shadows come together to create a photorealistic and compelling product shot",
       "render": "goggles",
       "date": 1754411936425
+    },
+    {
+      "id": 23,
+      "title": "Boomerang",
+      "src": "/images/render/projects/boomerang-wireframe.png",
+      "description": "This model is a replica of the \"boomerang\" weapon from Death Stranding, created in Blender with a focus on clean topology. I aimed to maintain a quad-based mesh throughout for better deformation and subdivision",
+      "render": "boomerang-wireframe",
+      "date": 1754495187087
     }
   ]
 }
