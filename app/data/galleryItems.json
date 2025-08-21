@@ -6,6 +6,7 @@
     { "id": 4, "src": "/images/render/realism/tea-pot.png", "alt": "tea-pot", "category": "realism", "featured": false },
     { "id": 5, "src": "/images/render/motion/spookie-corridor.mp4", "alt": "spookie-corridor", "category": "motion", "featured": false },
     { "id": 6, "src": "/images/render/realism/kitchen.png", "alt": "kitchen", "category": "realism", "featured": false },
-    { "id": 7, "src": "/images/render/motion/village-on-the-lake.mp4", "alt": "village-on-the-lake", "category": "motion", "featured": true }
+    { "id": 7, "src": "/images/render/motion/village-on-the-lake.mp4", "alt": "village-on-the-lake", "category": "motion", "featured": false },
+    { "id": 8, "src": "/images/render/motion/laptop.mp4", "alt": "laptop", "category": "motion", "featured": true }
   ]
 }
