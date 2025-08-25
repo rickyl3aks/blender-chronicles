@@ -1,12 +1,13 @@
 {
   "galleryItems": [
     { "id": 1, "src": "/images/render/lowPoly/giraffe.png", "alt": "Giraffe", "category": "lowpoly", "featured": false },
-    { "id": 2, "src": "/images/render/stylized/waterfall.mp4", "alt": "waterfall", "category": "stylized", "featured": false },
-    { "id": 3, "src": "/images/render/motion/domino.mp4", "alt": "domino", "category": "motion", "featured": false },
-    { "id": 4, "src": "/images/render/realism/tea-pot.png", "alt": "tea-pot", "category": "realism", "featured": false },
-    { "id": 5, "src": "/images/render/motion/spookie-corridor.mp4", "alt": "spookie-corridor", "category": "motion", "featured": false },
-    { "id": 6, "src": "/images/render/realism/kitchen.png", "alt": "kitchen", "category": "realism", "featured": false },
-    { "id": 7, "src": "/images/render/motion/village-on-the-lake.mp4", "alt": "village-on-the-lake", "category": "motion", "featured": false },
-    { "id": 8, "src": "/images/render/motion/laptop.mp4", "alt": "laptop", "category": "motion", "featured": true }
+    { "id": 2, "src": "/images/render/lowPoly/bunny.png", "alt": "Bunny", "category": "lowpoly", "featured": false },
+    { "id": 3, "src": "/images/render/stylized/waterfall.mp4", "alt": "waterfall", "category": "stylized", "featured": false },
+    { "id": 4, "src": "/images/render/motion/domino.mp4", "alt": "domino", "category": "motion", "featured": false },
+    { "id": 5, "src": "/images/render/realism/tea-pot.png", "alt": "tea-pot", "category": "realism", "featured": false },
+    { "id": 6, "src": "/images/render/motion/spookie-corridor.mp4", "alt": "spookie-corridor", "category": "motion", "featured": false },
+    { "id": 7, "src": "/images/render/realism/kitchen.png", "alt": "kitchen", "category": "realism", "featured": false },
+    { "id": 8, "src": "/images/render/motion/village-on-the-lake.mp4", "alt": "village-on-the-lake", "category": "motion", "featured": false },
+    { "id": 9, "src": "/images/render/motion/laptop.mp4", "alt": "laptop", "category": "motion", "featured": true }
   ]
 }
