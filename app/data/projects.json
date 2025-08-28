@@ -195,6 +195,14 @@
       "description": "A 3D recreation of Hornet from Hollow Knight. The scene features a natural environment built using a particle system to generate grass, with hand-placed stones enhancing the composition and atmosphere. This project highlights character modeling, environment design, and particle-based detailing",
       "render": "hornet",
       "date": 1755800767322
+    },
+    {
+      "id": 25,
+      "title": "Lamp Post",
+      "src": "/images/render/projects/lamp-post.png",
+      "description": "A moody Blender render of a lone lamp post glowing in the dark, with a quiet bench in the background holding a rabbit plush toy. Scattered stones on the pavement add subtle detail to the atmospheric scene",
+      "render": "lamp-post",
+      "date": 1756395748645
     }
   ]
 }
