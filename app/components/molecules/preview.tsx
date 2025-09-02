@@ -4,22 +4,22 @@ import previewDataRaw from "../../content/previewData.json";
 import Image from "next/image";
 import { sortedProjects } from "@/app/functions/sortedProject";
 
+export const renderMedia = (src: string, alt: string, className?: string) =>
+  src.endsWith(".mp4") ? (
+    <video width={800} height={400} playsInline autoPlay loop muted preload="metadata" className="w-full h-40 object-cover rounded-lg mb-6">
+      <source src={src} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  ) : (
+    <Image width={800} height={400} src={src} alt={alt} className={className ?? "w-full h-40 object-cover rounded-lg mb-6"} />
+  );
+
 const Preview = () => {
   const { galleryItems: items } = galleryItems;
   const previewData = previewDataRaw.previewData as Items[];
 
   const featuredGalleryItem = items.find((item: GalleryItem) => item.featured);
   const latest = sortedProjects[0];
-
-  const renderMedia = (src: string, alt: string) =>
-    src.endsWith(".mp4") ? (
-      <video width={800} height={400} playsInline autoPlay loop muted preload="metadata" className="w-full h-40 object-cover rounded-lg mb-6">
-        <source src={src} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    ) : (
-      <Image width={800} height={400} src={src} alt={alt} className="w-full h-40 object-cover rounded-lg mb-6" />
-    );
 
   return (
     <>

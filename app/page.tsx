@@ -1,29 +1,23 @@
 import HeroPage from "./components/organisms/heroPage";
-import Preview from "./components/molecules/preview";
-import Image from "next/image";
+import Preview, { renderMedia } from "./components/molecules/preview";
 import { Title } from "./components/atoms/title";
 import Button from "./components/atoms/button";
-import { sortedProjects } from "./functions/sortedProject";
+import galleryItems from "./data/galleryItems.json";
+import { GalleryItem } from "./types/types";
 
 const Home = () => {
-  const latest = sortedProjects[0];
-  const isVideo = latest.src.endsWith(".mp4");
+  const { galleryItems: items } = galleryItems;
+
+  const featuredGalleryItem = items.find((item: GalleryItem) => item.featured);
 
   return (
     <>
       <section className="text-center mt-10 p-6">
         <Title title="Latest Render" />
-        {isVideo ? (
-          <video width={800} height={400} playsInline className="m-auto border-5 rounded-xl" autoPlay loop muted preload="metadata">
-            <source src={latest.src} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        ) : (
-          <Image width={800} height={400} src={latest.src} className="m-auto border-5 rounded-xl" alt="Latest Render" priority />
-        )}
+        {featuredGalleryItem && renderMedia(featuredGalleryItem.src, "Latest Render", "m-auto border-5 rounded-xl")}
         <div className="mt-8">
-          <Button href="/journey" icon="→">
-            Read the Journey
+          <Button href="/gallery" icon="→">
+            View the Gallery
           </Button>
         </div>
         <div className="my-10 h-px bg-gradient-to-r from-transparent via-[#392d35] to-transparent" />
