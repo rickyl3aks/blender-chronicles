@@ -4,6 +4,6 @@
     { "label": "Motion Graphics", "value": "motion" },
     { "label": "Low Poly", "value": "lowpoly" },
     { "label": "Stylized", "value": "stylized" },
-    { "label": "Realism", "value": "realism" }
+    { "label": "Environment", "value": "environment" }
   ]
 }

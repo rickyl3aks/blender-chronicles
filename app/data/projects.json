@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Pokeball",
-      "src": "/images/render/realism/pokeball.png",
+      "src": "/images/render/projects/pokeball.png",
       "description": "This Pokeball was created using techniques I learned from a CG Cookie course. I explored texturing by applying various images to the object and gained a deeper understanding of shading nodes to fine-tune colors and achieve a stretched, aged appearance for the Pokeball",
       "render": "pokeball",
       "date": 1735207562000,
@@ -203,6 +203,14 @@
       "description": "A moody Blender render of a lone lamp post glowing in the dark, with a quiet bench in the background holding a rabbit plush toy. Scattered stones on the pavement add subtle detail to the atmospheric scene",
       "render": "lamp-post",
       "date": 1756395748645
+    },
+    {
+      "id": 26,
+      "title": "Tea Pot",
+      "src": "/images/render/projects/tea-pot.png",
+      "description": "“This teapot was created in Blender as part of my exploration of 3D modeling. I focused on understanding the flow of meshes and how they shape smooth, natural forms. By experimenting with structure, shading, and detail, I aimed to capture both the simplicity and elegance of a classic teapot",
+      "render": "tea-pot",
+      "date": 1727132400000
     }
   ]
 }
