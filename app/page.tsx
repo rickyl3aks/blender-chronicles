@@ -2,11 +2,11 @@ import HeroPage from "./components/organisms/heroPage";
 import Preview, { renderMedia } from "./components/molecules/preview";
 import { Title } from "./components/atoms/title";
 import Button from "./components/atoms/button";
-import galleryItems from "./data/galleryItems.json";
+import galleryItemsData from "./data/galleryItems.json";
 import { GalleryItem } from "./types/types";
 
 const Home = () => {
-  const { galleryItems: items } = galleryItems;
+  const { galleryItems: items = [] } = galleryItemsData;
 
   const featuredGalleryItem = items.find((item: GalleryItem) => item.featured);
 
