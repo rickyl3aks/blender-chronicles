@@ -14,12 +14,17 @@ const Home = () => {
     <>
       <section className="text-center mt-10 p-6">
         <Title title="Latest Render" />
-        {featuredGalleryItem && renderMedia(featuredGalleryItem.src, "Latest Render", "m-auto border-5 rounded-xl")}
-        <div className="mt-8">
-          <Button href="/gallery" icon="→">
-            View the Gallery
-          </Button>
-        </div>
+        {featuredGalleryItem && (
+          <>
+            {renderMedia(featuredGalleryItem.src, "Latest Render", "m-auto border-5 rounded-xl")}
+            <div className="mt-8">
+              <Button href={`/gallery/${featuredGalleryItem.category}`} icon="→">
+                View the Gallery
+              </Button>
+            </div>
+          </>
+        )}
+
         <div className="my-10 h-px bg-gradient-to-r from-transparent via-[#392d35] to-transparent" />
       </section>
 

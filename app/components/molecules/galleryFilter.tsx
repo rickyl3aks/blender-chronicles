@@ -1,34 +1,34 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import Image from "next/image";
 import { useState } from "react";
 import categoriesData from "../../data/categories.json";
 import galleryData from "../../data/galleryItems.json";
 import { Category, GalleryItem } from "../../types/types";
-import Lightbox from "../organisms/lightBox";
-import Button from "../atoms/button";
+import Lightbox from "../../components/organisms/lightBox";
+import Button from "../../components/atoms/button";
+import Link from "next/link";
 
 const categories: Category[] = categoriesData.categories;
 const galleryItems: GalleryItem[] = galleryData.galleryItems;
 
-const GalleryFilter = () => {
-  const [filter, setFilter] = useState("all");
+export default function GalleryPage() {
+  const { category } = useParams();
   const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
 
+  const filter = category && category !== "all" ? String(category) : "all";
   const filteredItems = filter === "all" ? galleryItems : galleryItems.filter((item) => item.category === filter);
 
   return (
     <section id="gallery">
       <div className="flex flex-wrap gap-3 mb-6">
         {categories.map((cat) => (
-          <Button
-            key={cat.value}
-            onClick={() => setFilter(cat.value)}
-            variant={filter === cat.value ? "accent" : "primary"}
-            aria-pressed={filter === cat.value}
-          >
-            {cat.label}
-          </Button>
+          <Link key={cat.value} href={`/gallery/${cat.value}`}>
+            <Button variant={filter === cat.value ? "accent" : "primary"} aria-pressed={filter === cat.value}>
+              {cat.label}
+            </Button>
+          </Link>
         ))}
       </div>
 
@@ -59,15 +59,13 @@ const GalleryFilter = () => {
               alt={item.alt}
               className="cursor-pointer rounded shadow transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
               onClick={() => setSelectedItem(item)}
-              priority={true}
+              priority
             />
           )
         )}
       </div>
 
-      {selectedItem && <Lightbox src={selectedItem.src} title={selectedItem.alt} onClose={() => setSelectedItem(null)} gallery={true} />}
+      {selectedItem && <Lightbox src={selectedItem.src} title={selectedItem.alt} onClose={() => setSelectedItem(null)} gallery />}
     </section>
   );
-};
-
-export default GalleryFilter;
+}
