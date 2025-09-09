@@ -6,12 +6,22 @@ import { sortedProjects } from "@/app/functions/sortedProject";
 
 export const renderMedia = (src: string, alt: string, className?: string) =>
   src.endsWith(".mp4") ? (
-    <video width={800} height={400} playsInline autoPlay loop muted preload="metadata" className="w-full h-40 object-cover rounded-lg mb-6">
+    <video
+      width={800}
+      height={400}
+      playsInline
+      autoPlay
+      loop
+      muted
+      preload="metadata"
+      property="true"
+      className="w-full h-40 object-cover rounded-lg mb-6"
+    >
       <source src={src} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   ) : (
-    <Image width={800} height={400} src={src} alt={alt} className={className ?? "w-full h-40 object-cover rounded-lg mb-6"} />
+    <Image width={800} height={400} src={src} alt={alt} priority className={className ?? "w-full h-40 object-cover rounded-lg mb-6"} />
   );
 
 const Preview = () => {

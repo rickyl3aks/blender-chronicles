@@ -38,9 +38,9 @@ const Lightbox = ({ src, title, description, date, gallery = false, onClose }: L
     >
       <div className="relative bg-[#392d35] rounded-lg max-w-[90vw] max-h-[90vh] landscape:m-[10rem] overflow-auto p-4 pb-[3rem] shadow-lg text-white">
         {src.endsWith(".mp4") ? (
-          <video src={src} autoPlay loop controls onClick={(e) => e.stopPropagation()} playsInline />
+          <video src={src} autoPlay loop controls property="true" onClick={(e) => e.stopPropagation()} playsInline />
         ) : (
-          <Image width={800} height={600} style={{ objectFit: "contain" }} src={src} alt={title || ""} priority={true} />
+          <Image width={800} height={600} style={{ objectFit: "contain" }} src={src} alt={title || ""} priority />
         )}
 
         {gallery && <p className="absolute bottom-2 italic text-sm">{title}</p>}

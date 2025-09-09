@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex h-16 items-center justify-between">
                 <Link href="/">
-                  <Image width={50} height={50} className="h-10 w-auto" src="/images/logo/logo.png" alt="logo" priority={true} />
+                  <Image width={50} height={50} className="h-10 w-auto" src="/images/logo/logo.png" alt="logo" priority />
                 </Link>
 
                 <div className="hidden mobile:block">
