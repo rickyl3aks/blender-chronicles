@@ -8,6 +8,7 @@
     { "id": 6, "src": "/images/render/environment/kitchen.png", "alt": "kitchen", "category": "environment", "featured": false },
     { "id": 7, "src": "/images/render/motion/village-on-the-lake.mp4", "alt": "village-on-the-lake", "category": "motion", "featured": false },
     { "id": 8, "src": "/images/render/motion/laptop.mp4", "alt": "laptop", "category": "motion", "featured": false },
-    { "id": 9, "src": "/images/render/environment/bathroom.png", "alt": "bathroom", "category": "environment", "featured": true }
+    { "id": 9, "src": "/images/render/environment/bathroom.png", "alt": "bathroom", "category": "environment", "featured": true },
+    { "id": 10, "src": "/images/render/motion/sacred-ritual.mp4", "alt": "sacred-ritual", "category": "motion", "featured": false }
   ]
 }
