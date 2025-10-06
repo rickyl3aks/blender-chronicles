@@ -211,6 +211,14 @@
       "description": "“This teapot was created in Blender as part of my exploration of 3D modeling. I focused on understanding the flow of meshes and how they shape smooth, natural forms. By experimenting with structure, shading, and detail, I aimed to capture both the simplicity and elegance of a classic teapot",
       "render": "tea-pot",
       "date": 1727132400000
+    },
+    {
+      "id": 27,
+      "title": "Shrine",
+      "src": "/images/render/projects/shrine.png",
+      "description": "This is a Japanese shrine modeled in Blender. I used a cloud sky image as the background, and for the terrain, I applied bump and displacement maps to create realistic ground detail",
+      "render": "shrine",
+      "date": 1759783635306
     }
   ]
 }
