@@ -219,6 +219,14 @@
       "description": "This is a Japanese shrine modeled in Blender. I used a cloud sky image as the background, and for the terrain, I applied bump and displacement maps to create realistic ground detail",
       "render": "shrine",
       "date": 1759783635306
+    },
+    {
+      "id": 28,
+      "title": "Bottle",
+      "src": "/images/render/projects/bottle.png",
+      "description": "I created a 3D handwash bottle in Blender using three different lights to enhance the shine and reflections. The model features simple materials and clean colors to highlight the product’s form and lighting",
+      "render": "bottle",
+      "date": 1760541670742
     }
   ]
 }
