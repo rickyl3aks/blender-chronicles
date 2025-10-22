@@ -227,6 +227,14 @@
       "description": "I created a 3D handwash bottle in Blender using three different lights to enhance the shine and reflections. The model features simple materials and clean colors to highlight the product’s form and lighting",
       "render": "bottle",
       "date": 1760541670742
+    },
+    {
+      "id": 29,
+      "title": "Bedroom",
+      "src": "/images/render/projects/bedroom.png",
+      "description": "This is an isometric 3D bedroom created in Blender, designed with a cozy atmosphere, balanced lighting, and clean low-poly details to bring a calm and modern feel to the space",
+      "render": "bedroom",
+      "date": 1761164521900
     }
   ]
 }
