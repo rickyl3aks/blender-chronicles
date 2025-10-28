@@ -235,6 +235,14 @@
       "description": "This is an isometric 3D bedroom created in Blender, designed with a cozy atmosphere, balanced lighting, and clean low-poly details to bring a calm and modern feel to the space",
       "render": "bedroom",
       "date": 1761164521900
+    },
+    {
+      "id": 30,
+      "title": "Glasses",
+      "src": "/images/render/projects/glasses.mp4",
+      "description": "This is an isometric 3D bedroom created in Blender, designed with a cozy atmosphere, balanced lighting, and clean low-poly details to bring a calm and modern feel to the space",
+      "render": "glasses",
+      "date": 1761669299704
     }
   ]
 }
