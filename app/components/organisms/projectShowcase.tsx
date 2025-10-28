@@ -33,29 +33,26 @@ const ProjectShowcase = ({ items }: ProjectProps) => {
             className="group rounded-xl shadow-md bg-white hover:shadow-lg transition cursor-pointer overflow-hidden"
             onClick={() => setSelectedItem(item)}
           >
-            <div className="overflow-hidden">
+            <div className="aspect-video overflow-hidden">
               {item.src.endsWith(".mp4") ? (
                 <video
-                  width={800}
-                  height={400}
-                  className="w-full h-auto transition-transform duration-300 group-hover:scale-130"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   autoPlay
                   loop
                   muted
                   preload="metadata"
                   playsInline
-                  property="true"
                 >
                   <source src={item.src} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               ) : (
                 <Image
-                  width={600}
-                  height={400}
                   src={item.src}
                   alt={item.title}
-                  className="w-full h-auto transition-transform duration-300 group-hover:scale-130"
+                  width={1920}
+                  height={1080}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   priority
                 />
               )}
