@@ -5,10 +5,12 @@ import Button from "./components/atoms/button";
 import galleryItemsData from "./data/galleryItems.json";
 import { GalleryItem } from "./types/types";
 
-const Home = () => {
   const { galleryItems: items = [] } = galleryItemsData;
 
-  const featuredGalleryItem = items.find((item: GalleryItem) => item.featured);
+  export const featuredGalleryItem = items.find((item: GalleryItem) => item.featured);
+
+const Home = () => {
+
 
   return (
     <>

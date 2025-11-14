@@ -1,17 +1,13 @@
-@import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
-@theme {
+@import "tailwindcss";
+@tailwind utilities;
+
+:root {
   --text-regular: 1.5rem;
   --font-title: "Sora", sans-serif;
   --breakpoint-mobile: 900px;
-}
 
-:root {
   --bg: #ffffff;
   --text: #111;
   --accent: #0070f3;
