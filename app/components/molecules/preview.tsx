@@ -59,7 +59,9 @@ const Preview = () => {
         return (
           <a
             key={index}
-            href={`/gallery/${featuredGalleryItem?.category}`}
+            href={`/${item.href}${
+              item.href === "gallery" ? `/${featuredGalleryItem?.category}` : ""
+            }`}
             className={`
               rounded-xl text-lg block my-8 p-6 text-white shadow-md transition-transform duration-300 cursor-pointer
               ${"bg-[#392d35] hover:bg-[#5a3f58] hover:shadow-lg min-h-[380px]"}
