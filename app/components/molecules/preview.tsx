@@ -21,7 +21,14 @@ export const renderMedia = (src: string, alt: string, className?: string) =>
       Your browser does not support the video tag.
     </video>
   ) : (
-    <Image width={800} height={400} src={src} alt={alt} priority className={className ?? "w-full h-40 object-cover rounded-lg mb-6"} />
+    <Image
+      width={800}
+      height={400}
+      src={src}
+      alt={alt}
+      priority
+      className={className ?? "w-full h-40 object-cover rounded-lg mb-6"}
+    />
   );
 
 const Preview = () => {
@@ -41,7 +48,10 @@ const Preview = () => {
         if (isGallery && featuredGalleryItem) {
           media = renderMedia(featuredGalleryItem.src, featuredGalleryItem.alt);
         } else if (isJourney && latest?.src) {
-          media = renderMedia(latest.src, `${latest.title || "Latest item"} preview`);
+          media = renderMedia(
+            latest.src,
+            `${latest.title || "Latest item"} preview`
+          );
         } else if (item.img) {
           media = renderMedia(item.img, `${item.title} preview`);
         }
@@ -52,17 +62,15 @@ const Preview = () => {
             href={`/gallery/${featuredGalleryItem?.category}`}
             className={`
               rounded-xl text-lg block my-8 p-6 text-white shadow-md transition-transform duration-300 cursor-pointer
-              ${
-                isGallery
-                  ? "bg-gradient-to-br from-[#6d537a] via-[#8a7395] to-[#9d7f9f] shadow-[0_0_20px_#9d7f9f] animate-pulseGlowAlt min-h-[450px]"
-                  : "bg-[#392d35] hover:bg-[#5a3f58] hover:shadow-lg min-h-[380px]"
-              }
+              ${"bg-[#392d35] hover:bg-[#5a3f58] hover:shadow-lg min-h-[380px]"}
               hover:scale-105
             `}
           >
             <div className="flex flex-col h-full justify-between">
               <div>
-                <h2 className="mb-4 font-title text-[#C6A4B6] font-bold text-2xl">{item.title}</h2>
+                <h2 className="mb-4 font-title text-[#C6A4B6] font-bold text-2xl">
+                  {item.title}
+                </h2>
                 {media}
               </div>
 

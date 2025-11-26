@@ -243,6 +243,14 @@
       "description": "A sleek motion graphic of Ray-Ban glasses crafted in Blender, the frame smoothly appears, the lenses separate, then reassemble with a clean, dynamic animation",
       "render": "glasses",
       "date": 1761669299704
+    },
+        {
+      "id": 31,
+      "title": "Cotton Cat",
+      "src": "/images/render/projects/cotton_cat.png",
+      "description": "This is a 3D cat model created in Blender, crafted with a soft fabric material to give it a realistic, handmade toy-like appearance. The design emphasizes the texture and feel of cotton fabric, making the cat look cozy and huggable, while maintaining a stylized and charming aesthetic perfect for 3D renders and digital showcases",
+      "render": "cotton_cat",
+      "date": 1764167606018
     }
   ]
 }
