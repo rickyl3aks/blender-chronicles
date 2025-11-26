@@ -3,6 +3,7 @@ import galleryItems from "../../data/galleryItems.json";
 import previewDataRaw from "../../content/previewData.json";
 import Image from "next/image";
 import { sortedProjects } from "@/app/functions/sortedProject";
+import PreviewCard from "./previewCard";
 
 export const renderMedia = (src: string, alt: string, className?: string) =>
   src.endsWith(".mp4") ? (
@@ -26,7 +27,6 @@ export const renderMedia = (src: string, alt: string, className?: string) =>
       height={400}
       src={src}
       alt={alt}
-      priority
       className={className ?? "w-full h-40 object-cover rounded-lg mb-6"}
     />
   );
@@ -39,10 +39,10 @@ const Preview = () => {
   const latest = sortedProjects[0];
 
   return (
-    <>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-4">
       {previewData.map((item: Items, index: number) => {
-        const isGallery = item.title === "🖼️ Gallery";
-        const isJourney = item.title === "📝 Journey";
+        const isGallery = item.href === "gallery";
+        const isJourney = item.href === "journey";
 
         let media = null;
         if (isGallery && featuredGalleryItem) {
@@ -56,37 +56,17 @@ const Preview = () => {
           media = renderMedia(item.img, `${item.title} preview`);
         }
 
-        return (
-          <a
-            key={index}
-            href={`/${item.href}${
-              item.href === "gallery" ? `/${featuredGalleryItem?.category}` : ""
-            }`}
-            className={`
-              rounded-xl text-lg block my-8 p-6 text-white shadow-md transition-transform duration-300 cursor-pointer
-              ${"bg-[#392d35] hover:bg-[#5a3f58] hover:shadow-lg min-h-[380px]"}
-              hover:scale-105
-            `}
-          >
-            <div className="flex flex-col h-full justify-between">
-              <div>
-                <h2 className="mb-4 font-title text-[#C6A4B6] font-bold text-2xl">
-                  {item.title}
-                </h2>
-                {media}
-              </div>
+        const href = `/${item.href}${
+          isGallery && featuredGalleryItem
+            ? `/${featuredGalleryItem.category}`
+            : ""
+        }`;
 
-              <div>
-                <p className="text-white mb-4">{item.description}</p>
-                <span className="text-[#E8C4C4] font-bold hover:underline hover:text-[#F5D6D6] transition-colors duration-200 cursor-pointer">
-                  {item.label}
-                </span>
-              </div>
-            </div>
-          </a>
+        return (
+          <PreviewCard key={index} item={item} media={media} href={href} />
         );
       })}
-    </>
+    </div>
   );
 };
 
