@@ -1,14 +1,81 @@
 {
   "galleryItems": [
-    { "id": 1, "src": "/images/render/lowPoly/giraffe.png", "alt": "Giraffe", "category": "lowpoly", "featured": false },
-    { "id": 2, "src": "/images/render/lowPoly/bunny.png", "alt": "Bunny", "category": "lowpoly", "featured": false },
-    { "id": 3, "src": "/images/render/stylized/waterfall.mp4", "alt": "waterfall", "category": "stylized", "featured": false },
-    { "id": 4, "src": "/images/render/motion/domino.mp4", "alt": "domino", "category": "motion", "featured": false },
-    { "id": 5, "src": "/images/render/motion/spookie-corridor.mp4", "alt": "spookie-corridor", "category": "motion", "featured": false },
-    { "id": 6, "src": "/images/render/environment/kitchen.png", "alt": "kitchen", "category": "environment", "featured": false },
-    { "id": 7, "src": "/images/render/motion/village-on-the-lake.mp4", "alt": "village-on-the-lake", "category": "motion", "featured": false },
-    { "id": 8, "src": "/images/render/motion/laptop.mp4", "alt": "laptop", "category": "motion", "featured": false },
-    { "id": 9, "src": "/images/render/environment/bathroom.png", "alt": "bathroom", "category": "environment", "featured": true },
-    { "id": 10, "src": "/images/render/motion/sacred-ritual.mp4", "alt": "sacred-ritual", "category": "motion", "featured": false }
+    {
+      "id": 1,
+      "src": "/images/render/lowPoly/giraffe.png",
+      "alt": "Giraffe",
+      "category": "lowpoly",
+      "featured": false
+    },
+    {
+      "id": 2,
+      "src": "/images/render/lowPoly/bunny.png",
+      "alt": "Bunny",
+      "category": "lowpoly",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "src": "/images/render/stylized/waterfall.mp4",
+      "alt": "waterfall",
+      "category": "stylized",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "src": "/images/render/motion/domino.mp4",
+      "alt": "domino",
+      "category": "motion",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "src": "/images/render/motion/spookie-corridor.mp4",
+      "alt": "spookie-corridor",
+      "category": "motion",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "src": "/images/render/environment/kitchen.png",
+      "alt": "kitchen",
+      "category": "environment",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "src": "/images/render/motion/village-on-the-lake.mp4",
+      "alt": "village-on-the-lake",
+      "category": "motion",
+      "featured": false
+    },
+    {
+      "id": 8,
+      "src": "/images/render/motion/laptop.mp4",
+      "alt": "laptop",
+      "category": "motion",
+      "featured": false
+    },
+    {
+      "id": 9,
+      "src": "/images/render/environment/bathroom.png",
+      "alt": "bathroom",
+      "category": "environment",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "src": "/images/render/motion/sacred-ritual.mp4",
+      "alt": "sacred-ritual",
+      "category": "motion",
+      "featured": false
+    },
+    {
+      "id": 11,
+      "src": "/images/render/environment/parking-lot.png",
+      "alt": "parking-lot",
+      "category": "environment",
+      "featured": true
+    }
   ]
 }
