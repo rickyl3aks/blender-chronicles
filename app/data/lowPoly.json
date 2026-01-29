@@ -13,6 +13,13 @@
       "render": "giraffe",
       "date": 1748089160,
       "video": false
+    },
+    {
+      "title": "Deer",
+      "description": "A stylized low-poly deer set in a minimal forest scene, surrounded by hand-crafted trees and rocks. The focus is on clean geometry, balanced shapes, and subtle color variation",
+      "render": "deer",
+      "date": 1769701447656,
+      "video": false
     }
   ]
 }
