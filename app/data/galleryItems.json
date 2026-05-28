@@ -75,6 +75,13 @@
       "src": "/images/render/environment/parking-lot.png",
       "alt": "parking-lot",
       "category": "environment",
+      "featured": false
+    },
+    {
+      "id": 12,
+      "src": "/images/render/environment/cabin-in-the-woods.png",
+      "alt": "cabin-in-the-woods",
+      "category": "environment",
       "featured": true
     }
   ]
