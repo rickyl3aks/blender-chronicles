@@ -83,6 +83,13 @@
       "alt": "cabin-in-the-woods",
       "category": "environment",
       "featured": true
+    },
+    {
+      "id": 13,
+      "src": "/images/render/motion/keycap.mp4",
+      "alt": "Keycaps",
+      "category": "motion",
+      "featured": false
     }
   ]
 }

@@ -259,6 +259,14 @@
       "description": "A stylized low-poly deer set in a minimal forest scene, surrounded by hand-crafted trees and rocks. The focus is on clean geometry, balanced shapes, and subtle color variation",
       "render": "deer",
       "date": 1769701447656
+    },
+    {
+      "id": 33,
+      "title": "Keycap",
+      "src": "/images/render/motion/keycap.mp4",
+      "description": "A smooth 3D animation made in Blender. It starts with a close-up of a single keycap, which then multiplies into a large grid as the camera moves around it. I used Blender’s compositing tools to polish the final look, creating a clean and rhythmic video perfect for showing off a product",
+      "render": "keycap",
+      "date": 1780956000000
     }
   ]
 }
